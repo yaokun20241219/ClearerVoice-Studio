@@ -1,4 +1,4 @@
-# ClearVoice: Target Speaker Extraction Algorithms
+# ClearerVoice-Studio: Target Speaker Extraction Algorithms
 
 
 ## Table of Contents
@@ -22,7 +22,7 @@ This repository provides training scripts for various target speaker extraction 
 1. **Clone the Repository**
 
 ``` sh
-git clone https://github.com/modelscope/ClearVoice.git
+git clone https://github.com/modelscope/ClearerVoice-Studio.git
 ```
 
 2. **Create Conda Environment**
