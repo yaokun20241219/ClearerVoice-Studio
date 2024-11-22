@@ -1,14 +1,14 @@
-[![SVG Banners](https://svg-banners.vercel.app/api?type=origin&text1=ClearerVoice-Studio🤠&text2=💖%20A%20Speech%20Front-end%20Processing%20Toolkit&width=1000&height=210)](https://github.com/Akshay090/svg-banners)
+[![SVG Banners](https://svg-banners.vercel.app/api?type=origin&text1=ClearerVoice-Studio&text2=%20A%20Speech%20Front-end%20Processing%20Toolkit&width=1000&height=210)](https://github.com/Akshay090/svg-banners)
     
 <strong>ClearerVoice-Studio</strong> is an open-source toolkit for **speech enhancement**, **speech separation**, and **target speaker extraction**, for both researchers and developers in speech processing. The repo is organized into three main components: **ClearVoice**, **speechscore**, and **train**, each tailored to specific needs.
 
 ---
-![GitHub Repo stars](https://img.shields.io/github/stars/modelscope/ClearerVoice-Studio) *Please, help our community project. Star on GitHub!*
+![GitHub Repo stars](https://img.shields.io/github/stars/modelscope/ClearerVoice-Studio) *Please help our community project. Star on GitHub!*
 
 ## Repository Structure
 
 ### 1. **clearvoice**  
-The `ClearVoice` folder contains pre-trained models trained on large datasets. These models are designed for inference and can be directly integrated into your projects.
+The `clearvoice` folder contains pre-trained models trained on large datasets. These models are designed for inference and can be directly integrated into your projects.
 
 ### 2. **train**  
 The `train` folder includes scripts and resources to train models for all three tasks:
