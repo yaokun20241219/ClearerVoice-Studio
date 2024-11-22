@@ -28,3 +28,14 @@ The `train` folder includes scripts and resources to train models for all three 
 - **[Target speaker extraction](./train/target_speaker_extraction/README.md)**
 
 
+## Contact
+If you have any comment or question about ClearVoice, please contact us by
+- email: {shengkui.zhao, zexu.pan}@alibaba-inc.com
+
+## License
+ClearVoice is released under the [Apache License 2.0](LICENSE).
+
+## Acknowledge
+ClearVoice contains third-party components and code modified from some open-source repos, including: <br>
+[Speechbrain](https://github.com/speechbrain/speechbrain), [ESPnet](https://github.com/espnet), [TalkNet-ASD
+](https://github.com/TaoRuijie/TalkNet-ASD)
