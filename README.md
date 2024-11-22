@@ -1,21 +1,4 @@
-# ClearerVoice-Studio
-
-
-<p align="center">
-    <br>
-    <img src="docs/images/ClearVoice-logo.png" width="400"/>
-    <br>
-<p>
-    
-<div align="center">
-    
-<!-- [![Documentation Status](https://readthedocs.org/projects/easy-cv/badge/?version=latest)](https://easy-cv.readthedocs.io/en/latest/) -->
-![license](https://img.shields.io/github/license/modelscope/modelscope.svg)
-<a href=""><img src="https://img.shields.io/badge/OS-Linux-orange.svg"></a>
-<a href=""><img src="https://img.shields.io/badge/Python->=3.8-aff.svg"></a>
-<a href=""><img src="https://img.shields.io/badge/Pytorch->=2.0-blue"></a>
-    
-</div>
+[![SVG Banners](https://svg-banners.vercel.app/api?type=origin&text1=ClearerVoice-Studio🤠&text2=💖%20A%20Speech%20Front-end%20Processing%20Toolkit&width=1000&height=210)](https://github.com/Akshay090/svg-banners)
     
 <strong>ClearerVoice-Studio</strong> is an open-source toolkit for **speech enhancement**, **speech separation**, and **target speaker extraction**, for both researchers and developers in speech processing. The repo is organized into three main components: **ClearVoice**, **speechscore**, and **train**, each tailored to specific needs.
 
