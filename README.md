@@ -27,7 +27,9 @@ The `train` folder includes scripts and resources to train models for all three 
 - **Speech separation**
 - **[Target speaker extraction](./train/target_speaker_extraction/README.md)**
 
-
+## What‘s new :fire:
+- [2024.11] Release of this repo
+  
 ## Contact
 If you have any comment or question about ClearVoice, please contact us by
 - email: {shengkui.zhao, zexu.pan}@alibaba-inc.com
