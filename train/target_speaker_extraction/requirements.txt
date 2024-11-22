@@ -13,3 +13,4 @@ torch-complex==0.4.4
 rotary-embedding-torch==0.8.3
 python_speech_features==0.6
 typeguard==4.3.0
+huggingface-hub==0.26.2

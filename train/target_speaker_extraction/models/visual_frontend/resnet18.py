@@ -1,6 +1,7 @@
 # Copyright 2020 Smeet Shah
 #  MIT License (https://opensource.org/licenses/MIT)
 
+import os, shutil
 
 import torch
 import torch.nn as nn
@@ -18,7 +19,12 @@ class Visual_encoder(nn.Module):
         self.v_ds = nn.Conv1d(512, 256, 1, bias=False)
 
         if not self.args.causal:
-            pretrained_model = torch.load("models/visual_frontend/resnet18.pth")
+            lip_resnet18_path = "models/visual_frontend/resnet18.pth"
+            if not os.path.exists(lip_resnet18_path):
+                from huggingface_hub import hf_hub_download
+                file_path = hf_hub_download(repo_id="alibabasglab/lip_reading_resnet18", filename="resnet18.pth")
+                shutil.move(file_path, lip_resnet18_path)
+            pretrained_model = torch.load(lip_resnet18_path)
             self.v_frontend.load_state_dict(pretrained_model)
             for param in self.v_frontend.parameters():
                 param.requires_grad = False
