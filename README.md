@@ -27,7 +27,14 @@
 ### 1. **ClearVoice**  
 The `ClearVoice` folder contains pre-trained models trained on large datasets. These models are designed for inference and can be directly integrated into your projects.
 
-### 2. **speechscore**  
+### 2. **train**  
+The `train` folder includes scripts and resources to train models for all three tasks:
+
+- **Speech enhancement**
+- **Speech separation**
+- **[Target speaker extraction](train/target_speaker_extraction/README.md)**
+
+### 3. **speechscore**  
 The `speechscore` folder provides scripts to evaluate the quality of speech processed through the toolkit. It includes metrics and tools to assess:
 
 - Signal-to-Noise Ratio (SNR)
@@ -36,13 +43,6 @@ The `speechscore` folder provides scripts to evaluate the quality of speech proc
 - Other relevant quality benchmarks  
 
 These scripts help you quantify improvements in your speech processing pipeline.
-
-### 3. **train**  
-The `train` folder includes scripts and resources to train models for all three tasks:
-
-- **Speech enhancement**
-- **Speech separation**
-- **[Target speaker extraction](./train/target_speaker_extraction/README.md)**
 
 ## What‘s new :fire:
 - [2024.11] Release of this repo
