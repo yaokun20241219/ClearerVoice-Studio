@@ -2,7 +2,7 @@
     
 <strong>ClearerVoice-Studio</strong> is an open-source toolkit for **speech enhancement**, **speech separation**, and **target speaker extraction**, for both researchers and developers in speech processing. The repo is organized into three main components: **ClearVoice**, **speechscore**, and **train**, each tailored to specific needs.
 
-
+![GitHub Repo stars]([https://img.shields.io/github/stars/speechbrain/speechbrain?style=social](https://img.shields.io/github/stars/modelscope/ClearerVoice-Studio)) *Please, help our community project. Star on GitHub!*
 ---
 
 ## Repository Structure
