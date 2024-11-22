@@ -1,4 +1,4 @@
-# ClearVoice
+# ClearerVoice-Studio
 
 
 <p align="center">
@@ -17,7 +17,7 @@
     
 </div>
     
-<strong>ClearVoice</strong> is an open-source toolkit for **speech enhancement**, **speech separation**, and **target speaker extraction**, for both researchers and developers in speech processing. The repo is organized into three main components: **clearvoice**, **speechscore**, and **train**, each tailored to specific needs.
+<strong>ClearerVoice-studio</strong> is an open-source toolkit for **speech enhancement**, **speech separation**, and **target speaker extraction**, for both researchers and developers in speech processing. The repo is organized into three main components: **ClearVoice**, **speechscore**, and **train**, each tailored to specific needs.
 
 
 ---
