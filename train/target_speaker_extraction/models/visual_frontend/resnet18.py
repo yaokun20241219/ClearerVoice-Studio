@@ -22,8 +22,7 @@ class Visual_encoder(nn.Module):
             lip_resnet18_path = "models/visual_frontend/resnet18.pth"
             if not os.path.exists(lip_resnet18_path):
                 from huggingface_hub import hf_hub_download
-                file_path = hf_hub_download(repo_id="alibabasglab/lip_reading_resnet18", filename="resnet18.pth")
-                shutil.move(file_path, lip_resnet18_path)
+                lip_resnet18_path = hf_hub_download(repo_id="alibabasglab/lip_reading_resnet18", filename="resnet18.pth")
             pretrained_model = torch.load(lip_resnet18_path)
             self.v_frontend.load_state_dict(pretrained_model)
             for param in self.v_frontend.parameters():
