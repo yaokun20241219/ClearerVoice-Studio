@@ -1,7 +1,24 @@
 # ClearVoice
-ClearVoice
 
-This repository provides tools for **speech enhancement**, **speech separation**, and **target speaker extraction**, a resource for research and development in speech processing. The repo is organized into three main components: **ClearVoice**, **speechscore**, and **train**, each tailored to specific needs.
+
+<p align="center">
+    <br>
+    <img src="docs/images/3D-Speaker-logo.png" width="400"/>
+    <br>
+<p>
+    
+<div align="center">
+    
+<!-- [![Documentation Status](https://readthedocs.org/projects/easy-cv/badge/?version=latest)](https://easy-cv.readthedocs.io/en/latest/) -->
+![license](https://img.shields.io/github/license/modelscope/modelscope.svg)
+<a href=""><img src="https://img.shields.io/badge/OS-Linux-orange.svg"></a>
+<a href=""><img src="https://img.shields.io/badge/Python->=3.8-aff.svg"></a>
+<a href=""><img src="https://img.shields.io/badge/Pytorch->=1.10-blue"></a>
+    
+</div>
+    
+<strong>ClearVoice</strong> is an open-source toolkit for **speech enhancement**, **speech separation**, and **target speaker extraction**, for both researchers and developers in speech processing. The repo is organized into three main components: **ClearVoice**, **speechscore**, and **train**, each tailored to specific needs.
+
 
 ---
 
