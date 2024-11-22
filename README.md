@@ -34,8 +34,6 @@ These scripts help you quantify improvements in your speech processing pipeline.
 If you have any comment or question about ClearVoice, please contact us by
 - email: {shengkui.zhao, zexu.pan}@alibaba-inc.com
 
-## License
-ClearVoice is released under the [Apache License 2.0](LICENSE).
 
 ## Acknowledge
 ClearVoice contains third-party components and code modified from some open-source repos, including: <br>
