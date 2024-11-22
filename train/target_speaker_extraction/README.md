@@ -28,7 +28,7 @@ git clone https://github.com/modelscope/ClearerVoice-Studio.git
 2. **Create Conda Environment**
 
 ``` sh
-cd ClearVoice/train/target_speaker_extraction/
+cd ClearerVoice-Studio/train/target_speaker_extraction/
 conda create -n clear_voice_tse python=3.9
 conda activate clear_voice_tse
 conda install pytorch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1  pytorch-cuda=11.8 -c pytorch -c nvidia
@@ -79,10 +79,10 @@ bash evaluate_only.sh
 
 ### Non-causal (Offline) WSJ0-2mix benchmark: 
 
- Dataset | Speakers | Model| Config | Checkpoint | SI-SDRi (dB) | SDRi (dB) 
-|-|-|-|-|
-| WSJ0-2mix | 2-mix | SpEx+ | [Paper](https://arxiv.org/abs/2005.04686) | - | 16.9 | 17.2 
-| WSJ0-2mix | 2-mix | SpEx+ | [This repo](./config/config_wsj0-2mix_speech_SpEx-plus_2spk.yaml) | [This repo](https://huggingface.co/alibabasglab/log_wsj0-2mix_speech_SpEx-plus_2spk/) | 17.1 | 17.5 
+| Dataset | Speakers | Model| Config | Checkpoint | SI-SDRi (dB) | SDRi (dB) |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| WSJ0-2mix | 2-mix | SpEx+ | [Paper](https://arxiv.org/abs/2005.04686) | - | 16.9 | 17.2 |
+| WSJ0-2mix | 2-mix | SpEx+ | [This repo](./config/config_wsj0-2mix_speech_SpEx-plus_2spk.yaml) | [This repo](https://huggingface.co/alibabasglab/log_wsj0-2mix_speech_SpEx-plus_2spk/) | 17.1 | 17.5 |
 
 
 ## 4. Audio-visual speaker extraction conditioned on face or lip recording
@@ -105,7 +105,7 @@ bash evaluate_only.sh
 ### Non-causal (Offline) VoxCeleb2-mix benchmark: 
 
  Dataset | Speakers | Model| Config | Checkpoint | SI-SDRi (dB) | SDRi (dB) 
-|-|-|-|-|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | VoxCeleb2 | 2-mix | [AV-ConvTasNet](https://arxiv.org/abs/1904.03760) | [Paper](https://arxiv.org/abs/1904.03760) | - | 10.6 | 10.9
 | VoxCeleb2 | 2-mix | [MuSE](https://arxiv.org/abs/2010.07775) | [Paper](https://arxiv.org/abs/2010.07775) | - | 11.7 | 12.0
 | VoxCeleb2 | 2-mix | [reentry](https://ieeexplore.ieee.org/document/9721129) | [Paper](https://ieeexplore.ieee.org/document/9721129) | - | 12.6 | 12.9
@@ -123,7 +123,7 @@ bash evaluate_only.sh
 ### Non-causal (Offline) LRS2-mix benchmark: 
 
  Dataset | Speakers | Model| Config | Checkpoint | SI-SDRi (dB) | SDRi (dB) 
-|-|-|-|-|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | LRS2 | 2-mix | [AV-ConvTasNet](https://arxiv.org/abs/1904.03760) | [This repo](./config/config_LRS2_lip_convtasnet_2spk.yaml)| [This repo](https://huggingface.co/alibabasglab/log_LRS2_lip_convtasnet_2spk/) | 11.6 | 11.9
 | LRS2 | 2-mix | [AV-DPRNN](https://ieeexplore.ieee.org/document/9887809) | [This repo](./config/config_LRS2_lip_dprnn_2spk.yaml) | [This repo](https://huggingface.co/alibabasglab/log_LRS2_lip_dprnn_2spk/) | 12.0 | 12.4 
 | LRS2 | 2-mix | [AV-TFGridNet](https://arxiv.org/abs/2310.19644) | [This repo](./config/config_LRS2_lip_tfgridnet_2spk.yaml) | [This repo](https://huggingface.co/alibabasglab/log_LRS2_lip_tfgridnet_2spk/)| 15.1 | 15.4 
@@ -148,7 +148,7 @@ bash evaluate_only.sh
 ### Non-causal (Offline) YGD-mix benchmark: 
 
  Dataset | Speakers | Model| Config | Checkpoint | SI-SDRi (dB) | SDRi (dB) 
-|-|-|-|-|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | YGD | 2-mix | [DPRNN-GSR](https://ieeexplore.ieee.org/document/9774925) | [Paper](https://ieeexplore.ieee.org/document/9774925) | - | 6.2 | 8.1 
 | YGD | 2-mix | [SEG](https://ieeexplore.ieee.org/document/9774925) | [Paper](https://ieeexplore.ieee.org/document/9774925) | - | 9.1 | 10.0 
 | YGD | 2-mix | [SEG](https://ieeexplore.ieee.org/document/9774925) | [This repo](./config/config_YGD_gesture_seg_2spk.yaml) | [This repo](https://huggingface.co/alibabasglab/log_YGD_gesture_seg_2spk/)| 9.5 | 10.4 
@@ -167,12 +167,12 @@ bash evaluate_only.sh
 ### Non-causal (Offline) KUL-mix benchmark: 
 
  Dataset | Speakers | Model | Config | Checkpoint | SI-SDRi (dB) | SDRi (dB) 
-|-|-|-|-|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | KUL | 2-mix | [NeuroHeed](https://ieeexplore.ieee.org/document/10683957) | [Paper](https://ieeexplore.ieee.org/document/10683957) | - | 14.3 | 15.5 
 | KUL | 2-mix | [NeuroHeed](https://ieeexplore.ieee.org/document/10683957) | [This repo](./config/config_KUL_eeg_neuroheed_2spk.yaml) | [This repo](https://huggingface.co/alibabasglab/log_KUL_eeg_neuroheed_2spk/)| 13.4 | 15.0 
 
 ### Causal (online) KUL-mix benchmark: 
 
  Dataset | Speakers | Model | Config | Checkpoint | SI-SDRi (dB) | SDRi (dB) 
-|-|-|-|-|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | KUL | 2-mix | [NeuroHeed](https://ieeexplore.ieee.org/document/10683957) | [Paper](https://ieeexplore.ieee.org/document/10683957) | - | 11.2 | 11.8 
