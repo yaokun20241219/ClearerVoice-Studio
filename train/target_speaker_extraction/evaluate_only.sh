@@ -1,16 +1,17 @@
 #!/bin/sh
 
 #####
-# Modify this lines
+# Modify these lines
 gpu_id=0													# Visible GPUs
-n_gpu=1														# Number of GPU used for training
-checkpoint_dir='checkpoints/log_LRS2_lip_dprnn_2spk'											# Leave empty if it's a new training, otherwise provide the name as 'checkpoints/log_...'
+n_gpu=1														# Number of GPU used, currently only support 1
+checkpoint_dir='checkpoints/log_LRS2_lip_dprnn_2spk'		# Provide the name as 'checkpoints/log_...'
 #####
 
 
 train_from_last_checkpoint=1
 config_pth=${checkpoint_dir}/config.yaml
 
+# call evaluation
 export PYTHONWARNINGS="ignore"
 CUDA_VISIBLE_DEVICES="$gpu_id" \
 python -W ignore \

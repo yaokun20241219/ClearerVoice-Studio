@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #####
-# Modify this lines
+# Modify these lines
 gpu_id=0,1													# Visible GPUs
 n_gpu=2														# Number of GPU used for training
 checkpoint_dir=''											# Leave empty if it's a new training, otherwise provide the name as 'checkpoints/log_...'
@@ -11,7 +11,7 @@ config_pth=config/config_LRS2_lip_dprnn_2spk.yaml			# The config file, only used
 
 # create checkpoint log folder
 if [ -z ${checkpoint_dir} ]; then
-	checkpoint_dir='checkpoints/log_'$(date '+%Y-%m-%d(%H:%M:%S)')		# define the checkpoint log name
+	checkpoint_dir='checkpoints/log_'$(date '+%Y-%m-%d(%H:%M:%S)')
 	train_from_last_checkpoint=0
 	mkdir -p ${checkpoint_dir}
 	cp $config_pth ${checkpoint_dir}/config.yaml
@@ -21,7 +21,8 @@ else
 fi
 yaml_name=log_$(date '+%Y-%m-%d(%H:%M:%S)')
 cat $config_pth > ${checkpoint_dir}/${yaml_name}.txt
- 
+
+# call training
 export PYTHONWARNINGS="ignore"
 CUDA_VISIBLE_DEVICES="$gpu_id" \
 python -W ignore \

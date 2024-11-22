@@ -22,6 +22,8 @@ def get_dataloader_lip(args, partition):
             batch_size = 1,
             shuffle = (sampler is None),
             num_workers = args.num_workers,
+            persistent_workers = True,
+            drop_last=True, 
             sampler=sampler,
             collate_fn=custom_collate_fn)
     
