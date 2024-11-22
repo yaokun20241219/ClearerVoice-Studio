@@ -17,14 +17,14 @@
     
 </div>
     
-<strong>ClearVoice</strong> is an open-source toolkit for **speech enhancement**, **speech separation**, and **target speaker extraction**, for both researchers and developers in speech processing. The repo is organized into three main components: **ClearVoice**, **speechscore**, and **train**, each tailored to specific needs.
+<strong>ClearVoice</strong> is an open-source toolkit for **speech enhancement**, **speech separation**, and **target speaker extraction**, for both researchers and developers in speech processing. The repo is organized into three main components: **clearvoice**, **speechscore**, and **train**, each tailored to specific needs.
 
 
 ---
 
 ## Repository Structure
 
-### 1. **ClearVoice**  
+### 1. **vlearvoice**  
 The `ClearVoice` folder contains pre-trained models trained on large datasets. These models are designed for inference and can be directly integrated into your projects.
 
 ### 2. **train**  
