@@ -4,4 +4,4 @@ ClearVoice
 Supports:
 1. speech enhancement
 2. speech separation
-3. multi-modal target speaker extraction
+3. [Multi-modal target speaker extraction](./train/target_speaker_extraction/README.md)
