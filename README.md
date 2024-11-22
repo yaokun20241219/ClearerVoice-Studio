@@ -3,7 +3,7 @@
 
 <p align="center">
     <br>
-    <img src="docs/images/3D-Speaker-logo.png" width="400"/>
+    <img src="docs/images/ClearVoice-logo.png" width="400"/>
     <br>
 <p>
     
@@ -13,7 +13,7 @@
 ![license](https://img.shields.io/github/license/modelscope/modelscope.svg)
 <a href=""><img src="https://img.shields.io/badge/OS-Linux-orange.svg"></a>
 <a href=""><img src="https://img.shields.io/badge/Python->=3.8-aff.svg"></a>
-<a href=""><img src="https://img.shields.io/badge/Pytorch->=1.10-blue"></a>
+<a href=""><img src="https://img.shields.io/badge/Pytorch->=2.0-blue"></a>
     
 </div>
     
