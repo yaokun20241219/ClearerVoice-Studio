@@ -18,7 +18,7 @@ The `train` folder includes scripts and resources to train models for all three 
 - **[Target speaker extraction](train/target_speaker_extraction/README.md)**
 
 ### 3. **speechscore**  
-The `speechscore` folder provides scripts to evaluate the quality of speech processed through the toolkit. It includes metrics and tools to assess:
+The <a href="https://github.com/modelscope/ClearerVoice-Studio/tree/main/speechscore">`speechscore`<a/> folder provides scripts to evaluate the quality of speech processed through the toolkit. It includes metrics and tools to assess:
 
 - Signal-to-Noise Ratio (SNR)
 - Perceptual Evaluation of Speech Quality (PESQ)
