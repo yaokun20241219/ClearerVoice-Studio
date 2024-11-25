@@ -1,6 +1,6 @@
 [![SVG Banners](https://svg-banners.vercel.app/api?type=origin&text1=ClearerVoice-Studio&text2=%20A%20Speech%20Front-end%20Processing%20Toolkit&width=1000&height=210)](https://github.com/Akshay090/svg-banners)
     
-<strong>ClearerVoice-Studio</strong> is an open-source toolkit for **speech enhancement**, **speech separation**, and **target speaker extraction**, for both researchers and developers in speech processing. The repo is organized into three main components: **ClearVoice**, <a href="https://github.com/modelscope/ClearerVoice-Studio/tree/main/speechscore">**speechscore**<a/>, and **train**, each tailored to specific needs.
+<strong>ClearerVoice-Studio</strong> is an open-source toolkit for **speech enhancement**, **speech separation**, and <a href="https://github.com/modelscope/ClearerVoice-Studio/blob/main/train/target_speaker_extraction/README.md">**target speaker extraction**<a/>, for both researchers and developers in speech processing. The repo is organized into three main components: **ClearVoice**, <a href="https://github.com/modelscope/ClearerVoice-Studio/tree/main/speechscore">**speechscore**<a/>, and **train**, each tailored to specific needs.
 
 ---
 ![GitHub Repo stars](https://img.shields.io/github/stars/modelscope/ClearerVoice-Studio) *Please help our community project. Star on GitHub!*
