@@ -20,10 +20,10 @@ speechscore is a wrapper designed for assessing speech quality. It includes a co
 |8.| NB_PESQ |NB-PESQ (NarrowBand Perceptual Evaluation of Speech Quality) meaures speech quality that reflects human auditory perception. It is defined in the ITU-T Recommendation P.862 and is developed for assessing narrowband speech codecs and enhancement algorithms. | See <a href="https://github.com/ludlows/PESQ"> github page </a> |
 |9.| PESQ | PESQ (Perceptual Evaluation of Speech Quality) assesses the quality of speech signals to mimic human perception. It is standardized by the International Telecommunication Union (ITU-T P.862) and is widely used in evaluating telecommunication systems and speech enhancement algorithms. |See <a href="https://github.com/ludlows/PESQ"> github page </a> |
 |10.| SISDR |SI-SDR (Scale-Invariant Signal-to-Distortion Ratio) quantifies the ratio between the power of the target signal component and the residual distortion. It measures how well an estimated speech signal matches the target (clean) speech signal, while being invariant to differences in scale. |See paper: <a href="https://arxiv.org/abs/1811.02508">SDR - half-baked or well done?<a/> |
-|11.| SNR | | |
-|12.| SRMR | | |
-|13.| SSNR | | |
-|14.| STOI| | |
+|11.| SNR | SNR (Signal-to-Noise Ratio) is a fundamental metric used in speech quality measurement to evaluate the relative level of the desired speech signal compared to unwanted noise. It quantifies the clarity and intelligibility of speech in decibels (dB).| See paper: <a href="https://www.isca-archive.org/icslp_1998/hansen98_icslp.pdf">An effective quality evaluation protocol for speech enhancement algorithms<a/>|
+|12.| SRMR |SRMR (Speech-to-Reverberation Modulation Energy Ratio) evaluates the ratio of speech-dominant modulation energy to reverberation-dominant modulation energy. It quantifies the impact of reverberation on the quality and intelligibility of speech signals. SRMR does not require clean references. | See <a href="https://github.com/jfsantos/SRMRpy">SRMRpy<a/> and <a href="https://github.com/MuSAELab/SRMRToolbox">SRMR Toolbox<a/>|
+|13.| SSNR |SSNR (Segmental Signal-to-Noise Ratio) is an extension of SNR (Signal-to-Noise Ratio) and for evaluating the quality of speech signals in shorter segments or frames. It is calculated by dividing the power of the clean speech signal by the power of the noise signal, computed over small segments of the speech signal. | See paper: <a href="https://www.isca-archive.org/icslp_1998/hansen98_icslp.pdf">An effective quality evaluation protocol for speech enhancement algorithms<a/>|
+|14.| STOI|STOI (Short-Time Objective Intelligibility Index) measures speech quality and intelligibility by operateing on short-time segments of the speech signal and computes a score between 0 and 1. | See <a href="https://github.com/mpariente/pystoi">github page <a/> |
 
 ## 2. Usage
 
