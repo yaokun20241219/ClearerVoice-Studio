@@ -8,21 +8,22 @@
 ## 1. Introduction
 
 speechscore is a wrapper designed for assessing speech quality. It includes a collection of commonly used speech quality metrics, as listed below:
-
-1. BSSEval {ISR, SAR, SDR} (See <a href="https://github.com/sigsep/sigsep-mus-eval">the official museval page</a>)
-2. {CBAK, COVL, CSIG} ()
-3. DNSMOS {BAK, OVRL, SIG, P808_MOS}
-4. FWSEGSNR
-5. LLR
-6. LSD
-7. MCD
-8. NB_PESQ
-9. PESQ
-10. SISDR
-11. SNR
-12. SRMR
-13. SSNR
-14. STOI
+| Index | Metrics | Short Description | Externel Link |
+|-------|---------|-------------|---------------|
+|1.| BSSEval {ISR, SAR, SDR} | | (See <a href="https://github.com/sigsep/sigsep-mus-eval">the official museval page</a>)|
+|2.| {CBAK, COVL, CSIG} | CSIG predicts the signal distortion mean opinion score (MOS), CBAK measures background intrusiveness, and COVL measures speech quality. CSIG, CBAK, and COVL are ranged from 1 to 5| See paper: <a href="https://ecs.utdallas.edu/loizou/speech/obj_paper_jan08.pdf">Evaluation of Objective Quality Measures for Speech Enhancement</a>|
+|3.| DNSMOS {BAK, OVRL, SIG, P808_MOS} |||
+|4.| FWSEGSNR | | | |
+|5.| LLR | | |
+|6.| LSD | | |
+|7.| MCD | | |
+|8.| NB_PESQ | | |
+|9.| PESQ | | |
+|10.| SISDR | | |
+|11.| SNR | | |
+|12.| SRMR | | |
+|13.| SSNR | | |
+|14.| STOI| | |
 
 ## 2. Usage
 
