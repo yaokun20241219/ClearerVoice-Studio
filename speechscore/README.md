@@ -182,7 +182,11 @@ score for wav directories
                  'SSNR': 6.629427626276164,
                  'STOI': 0.9167122916372739}}
 ```
+Any subset of the full score list is supported, specify your score list using the following objective:
 
+```
+mySpeechScore = SpeechScore(['.'])
+```
 
 
 
