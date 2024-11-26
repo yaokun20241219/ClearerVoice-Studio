@@ -2,15 +2,16 @@
     
 <strong>ClearerVoice-Studio</strong> is an open-source toolkit for **speech enhancement**, **speech separation**, and <a href="https://github.com/modelscope/ClearerVoice-Studio/blob/main/train/target_speaker_extraction">**target speaker extraction**<a/>, for both researchers and developers in speech processing. The repo is organized into three main components: **[ClearVoice](https://github.com/modelscope/ClearerVoice-Studio/tree/main/clearvoice)**, <a href="https://github.com/modelscope/ClearerVoice-Studio/tree/main/speechscore">**speechscore**<a/>, and **train**, each tailored to specific needs.
 
+#### 👉🏻[ClearVoice Demo](https://huggingface.co/spaces/alibabasglab/ClearVoice)👈🏻   👉🏻[SpeechScore Demo](https://huggingface.co/spaces/alibabasglab/SpeechScore)👈🏻
+---
 Currently, the repo is under updating...
 
----
 ![GitHub Repo stars](https://img.shields.io/github/stars/modelscope/ClearerVoice-Studio) *Please help our community project. Star on GitHub!*
 
 ## Repository Structure
 
 ### 1. **clearvoice**  
-The [`clearvoice`](https://github.com/modelscope/ClearerVoice-Studio/tree/main/clearvoice) folder contains pre-trained models trained on large datasets. These models are designed for inference and can be directly integrated into your projects.
+[`clearvoice`](https://github.com/modelscope/ClearerVoice-Studio/tree/main/clearvoice) is a unified inference platform. It runs on the pre-trained models for speech enhancement, speech separation, and audio-visual target speaker extraction. We release several pre-trained models that are trained on large datasets. These models can be directly integrated into your projects for speech processing. We plan to include other speech processing tasks in future.
 
 ### 2. **train**  
 The `train` folder includes scripts and resources to train models for all three tasks:
