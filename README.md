@@ -1,6 +1,6 @@
 [![SVG Banners](https://svg-banners.vercel.app/api?type=origin&text1=ClearerVoice-Studio&text2=%20A%20Speech%20Front-end%20Processing%20Toolkit&width=1000&height=210)](https://github.com/Akshay090/svg-banners)
     
-<strong>ClearerVoice-Studio</strong> is an open-source toolkit for **speech enhancement**, **speech separation**, and <a href="https://github.com/modelscope/ClearerVoice-Studio/blob/main/train/target_speaker_extraction">**target speaker extraction**<a/>, for both researchers and developers in speech processing. The repo is organized into three main components: **clearvoice**, <a href="https://github.com/modelscope/ClearerVoice-Studio/tree/main/speechscore">**speechscore**<a/>, and **train**, each tailored to specific needs.
+<strong>ClearerVoice-Studio</strong> is an open-source toolkit for **speech enhancement**, **speech separation**, and <a href="https://github.com/modelscope/ClearerVoice-Studio/blob/main/train/target_speaker_extraction">**target speaker extraction**<a/>, for both researchers and developers in speech processing. The repo is organized into three main components: **[ClearVoice](https://github.com/modelscope/ClearerVoice-Studio/tree/main/clearvoice)**, <a href="https://github.com/modelscope/ClearerVoice-Studio/tree/main/speechscore">**speechscore**<a/>, and **train**, each tailored to specific needs.
 
 Currently, the repo is under updating...
 
@@ -10,7 +10,7 @@ Currently, the repo is under updating...
 ## Repository Structure
 
 ### 1. **clearvoice**  
-The `clearvoice` folder contains pre-trained models trained on large datasets. These models are designed for inference and can be directly integrated into your projects.
+The [`clearvoice`](https://github.com/modelscope/ClearerVoice-Studio/tree/main/clearvoice) folder contains pre-trained models trained on large datasets. These models are designed for inference and can be directly integrated into your projects.
 
 ### 2. **train**  
 The `train` folder includes scripts and resources to train models for all three tasks:
