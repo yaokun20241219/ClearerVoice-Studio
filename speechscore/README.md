@@ -4,7 +4,7 @@
 
 - [1. Introduction](#1-introduction)
 - [2. Usage](#2-usage)
-- [3. Acknowledgements]($3-acknowledgements)
+- [3. Acknowledgements](#3-acknowledgements)
 
 ## 1. Introduction
 
