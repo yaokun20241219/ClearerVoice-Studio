@@ -12,9 +12,9 @@
 
 | Tasks (Sampling rate) | Models (HuggingFace Links)|
 |-------|--------------------------|
-|Speech Enhancement (16kHz & 48kHz)| MossFormer2_SE_48K ([link](https://huggingface.co/alibabasglab/MossFormer2_SE_48K)), FRCRN_SE_16K ([link](https://huggingface.co/alibabasglab/FRCRN_SE_16K)), MossFormerGAN_SE_16K ([link](https://huggingface.co/alibabasglab/MossFormerGAN_SE_16K)) | 
-|Speech Separation (16kHz)|MossFormer2_SS_16K ([link](https://huggingface.co/alibabasglab/MossFormer2_SS_16K))|
-|Audio-Visual Target Speaker Extraction (16kHz)|AV_MossFormer2_TSE_16K ([link](https://huggingface.co/alibabasglab/AV_MossFormer2_TSE_16K))|
+|Speech Enhancement (16kHz & 48kHz)| `MossFormer2_SE_48K` ([link](https://huggingface.co/alibabasglab/MossFormer2_SE_48K)), `FRCRN_SE_16K` ([link](https://huggingface.co/alibabasglab/FRCRN_SE_16K)), `MossFormerGAN_SE_16K` ([link](https://huggingface.co/alibabasglab/MossFormerGAN_SE_16K)) | 
+|Speech Separation (16kHz)|`MossFormer2_SS_16K` ([link](https://huggingface.co/alibabasglab/MossFormer2_SS_16K))|
+|Audio-Visual Target Speaker Extraction (16kHz)|`AV_MossFormer2_TSE_16K` ([link](https://huggingface.co/alibabasglab/AV_MossFormer2_TSE_16K))|
 
 ## 2. Usage
 
