@@ -4,6 +4,7 @@
 
 - [1. Introduction](#1-introduction)
 - [2. Usage](#2-usage)
+- [3. Acknowledgements]($3-acknowledgements)
 
 ## 1. Introduction
 
@@ -189,5 +190,5 @@ Any subset of the full score list is supported, specify your score list using th
 mySpeechScore = SpeechScore(['.'])
 ```
 
-## Acknowledgements
+## 3. Acknowledgements
 We referred to <a href="https://github.com/aliutkus/speechmetrics">speechmetrics<a/>, <a href="https://github.com/microsoft/DNS-Challenge/tree/master/DNSMOS">DNSMOS <a/>, <a href="https://github.com/sigsep/bsseval/tree/master">BSSEval<a/>, <a href="https://github.com/chenqi008/pymcd/blob/main/pymcd/mcd.py">pymcd<a/>, <a href="https://github.com/mpariente/pystoi">pystoi<a/>, <a href="https://github.com/ludlows/PESQ">PESQ<a/>, and <a href="https://github.com/santi-pdp/segan_pytorch/tree/master">segan_pytorch<a/> for implementing this repo.
