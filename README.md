@@ -18,7 +18,7 @@ The `train` folder includes scripts and resources to train models for all three 
 
 - **Speech enhancement**
 - **Speech separation**
-- **[Target speaker extraction](train/target_speaker_extraction/README.md)**
+- **[Target speaker extraction](train/target_speaker_extraction)**
 
 ### 3. **speechscore**  
 The <a href="https://github.com/modelscope/ClearerVoice-Studio/tree/main/speechscore">`speechscore`<a/> folder provides scripts to evaluate the quality of speech processed through the toolkit. It includes metrics and tools to assess:
