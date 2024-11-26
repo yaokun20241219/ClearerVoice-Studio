@@ -189,5 +189,5 @@ Any subset of the full score list is supported, specify your score list using th
 mySpeechScore = SpeechScore(['.'])
 ```
 
-
-
+## Acknowledgements
+We referred to <a href="https://github.com/aliutkus/speechmetrics">speechmetrics<a/>, <a href="https://github.com/microsoft/DNS-Challenge/tree/master/DNSMOS">DNSMOS <a/> and <a href="https://github.com/sigsep/bsseval/tree/master">BSSEval<a/>, <a href="https://github.com/chenqi008/pymcd/blob/main/pymcd/mcd.py">pymcd<a/>, <a href="https://github.com/mpariente/pystoi">pystoi<a/>, <a href="https://github.com/ludlows/PESQ">PESQ<a/> for implementing this repo.
