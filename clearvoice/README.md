@@ -8,7 +8,7 @@
 
 ## 1. Introduction
 
-`clearvoice` provides a unified inference platform for speech enhancement, speech separation, and audio-visual target speaker extraction. It aims to simplify the calling and adoptation of our pre-trained models for your project developments. We currently provide the following pre-trained models:
+`clearvoice` provides a unified inference platform for `speech enhancement`, `speech separation`, and `audio-visual target speaker extraction`. It aims to simplify the calling and adoptation of our pre-trained models for your project developments. We currently provide the following pre-trained models:
 
 | Tasks (Sampling rate) | Models (HuggingFace Links)|
 |-------|--------------------------|
