@@ -190,4 +190,4 @@ mySpeechScore = SpeechScore(['.'])
 ```
 
 ## Acknowledgements
-We referred to <a href="https://github.com/aliutkus/speechmetrics">speechmetrics<a/>, <a href="https://github.com/microsoft/DNS-Challenge/tree/master/DNSMOS">DNSMOS <a/> and <a href="https://github.com/sigsep/bsseval/tree/master">BSSEval<a/>, <a href="https://github.com/chenqi008/pymcd/blob/main/pymcd/mcd.py">pymcd<a/>, <a href="https://github.com/mpariente/pystoi">pystoi<a/>, <a href="https://github.com/ludlows/PESQ">PESQ<a/>, and <a href="https://github.com/santi-pdp/segan_pytorch/tree/master">segan_pytorch<a/> for implementing this repo.
+We referred to <a href="https://github.com/aliutkus/speechmetrics">speechmetrics<a/>, <a href="https://github.com/microsoft/DNS-Challenge/tree/master/DNSMOS">DNSMOS <a/>, <a href="https://github.com/sigsep/bsseval/tree/master">BSSEval<a/>, <a href="https://github.com/chenqi008/pymcd/blob/main/pymcd/mcd.py">pymcd<a/>, <a href="https://github.com/mpariente/pystoi">pystoi<a/>, <a href="https://github.com/ludlows/PESQ">PESQ<a/>, and <a href="https://github.com/santi-pdp/segan_pytorch/tree/master">segan_pytorch<a/> for implementing this repo.
