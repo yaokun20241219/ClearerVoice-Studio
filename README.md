@@ -11,7 +11,7 @@ Currently, the repo is under updating...
 ## Repository Structure
 
 ### 1. **clearvoice**  
-[`clearvoice`](https://github.com/modelscope/ClearerVoice-Studio/tree/main/clearvoice) is a unified inference platform. It runs on the pre-trained models for speech enhancement, speech separation, and audio-visual target speaker extraction. We release several pre-trained models that are trained on large datasets. These models can be directly integrated into your projects for speech processing. We plan to include other speech processing tasks in future.
+[`clearvoice`](https://github.com/modelscope/ClearerVoice-Studio/tree/main/clearvoice) is a unified inference platform. It runs on the pre-trained models for speech enhancement, speech separation, and audio-visual target speaker extraction. We release several pre-trained models that are trained on large datasets. These models can be directly integrated into your projects for speech processing. We plan to include more speech processing tasks in future.
 
 ### 2. **train**  
 The `train` folder includes scripts and resources to train models for all three tasks:
