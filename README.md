@@ -1,6 +1,6 @@
 [![SVG Banners](https://svg-banners.vercel.app/api?type=origin&text1=ClearerVoice-Studio&text2=%20A%20Speech%20Front-end%20Processing%20Toolkit&width=1000&height=210)](https://github.com/Akshay090/svg-banners)
     
-<strong>ClearerVoice-Studio</strong> is an open-source toolkit for **speech enhancement**, **speech separation**, and <a href="https://github.com/modelscope/ClearerVoice-Studio/blob/main/train/target_speaker_extraction/README.md">**target speaker extraction**<a/>, for both researchers and developers in speech processing. The repo is organized into three main components: **ClearVoice**, <a href="https://github.com/modelscope/ClearerVoice-Studio/tree/main/speechscore">**speechscore**<a/>, and **train**, each tailored to specific needs.
+<strong>ClearerVoice-Studio</strong> is an open-source toolkit for **speech enhancement**, **speech separation**, and <a href="https://github.com/modelscope/ClearerVoice-Studio/blob/main/train/target_speaker_extraction/README.md">**target speaker extraction**<a/>, for both researchers and developers in speech processing. The repo is organized into three main components: **clearvoice**, <a href="https://github.com/modelscope/ClearerVoice-Studio/tree/main/speechscore">**speechscore**<a/>, and **train**, each tailored to specific needs.
 
 Currently, the repo is under updating...
 
@@ -33,11 +33,11 @@ These scripts help you quantify improvements in your speech processing pipeline.
 - [2024.11] Release of this repo
   
 ## Contact
-If you have any comment or question about ClearVoice, please contact us by
+If you have any comment or question about ClearerVoice-Studio, please contact us by
 - email: {shengkui.zhao, zexu.pan}@alibaba-inc.com
 
 
 ## Acknowledge
-ClearVoice contains third-party components and code modified from some open-source repos, including: <br>
+ClearerVoice-Studio contains third-party components and code modified from some open-source repos, including: <br>
 [Speechbrain](https://github.com/speechbrain/speechbrain), [ESPnet](https://github.com/espnet), [TalkNet-ASD
 ](https://github.com/TaoRuijie/TalkNet-ASD)
