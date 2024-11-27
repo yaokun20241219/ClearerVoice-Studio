@@ -1,1 +1,1 @@
-# ClearerVoice-Studio: For Speech Separation Training
+# ClearerVoice-Studio: Train Speech Separation Models
