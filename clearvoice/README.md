@@ -18,6 +18,7 @@ ClearVoice offers a unified inference platform for `speech enhancement`, `speech
 |Audio-Visual Target Speaker Extraction (16kHz)|`AV_MossFormer2_TSE_16K` ([link](https://huggingface.co/alibabasglab/AV_MossFormer2_TSE_16K))|
 
 No need to manually download the pre-trained models. They are automatically downloaded during inference.
+
 ## 2. Usage
 
 ### Step-by-Step Guide
@@ -79,3 +80,16 @@ Parameter Description:
 - `input_path`: Path to the input audio/video file, input audio/video directory, or a list file (.scp) 
 - `online_write`: Set to `True` to enable saving the enhanced/separated audio/video directly to local files during processing, otherwise, the enhanced/separated audio is returned. (Only supports `False` for `speech_enhancement`, `speech_separation` when processing single wave file`)
 - `output_path`: Path to a file or a directory to save the enhanced/separated audio/video file
+
+## 2. Model Performance
+
+**Speech enhancement models:**
+We evaluated our released speech enhancement models on the popular benchmarks: [VoiceBank+DEMAND](https://paperswithcode.com/dataset/demand) testset (16kHz & 48kHz) and [DNS-Challenge-2020](https://paperswithcode.com/dataset/deep-noise-suppression-2020) (Interspeech) testset (non-reverb, 16kHz). Different from the most published papers that tailored each model for each dataset, our evaluation here uses each unified model on the two test sets.
+
+**VoiceBank+DEMAND testset**
+|Model               |PESQ    |NB_PESQ |CBAK    |COVL    |CSIG    |STOI    |SISDR    |SNR      |SRMR    |SSNR    |P808_MOS|SIG     |BAK     |OVRL    |ISR      |SAR      |SDR      |FWSEGSNR |LLR     |LSD     |MCD|
+|-----               |---     |------- |----    |----    |----    |----    |-----    |---      |----    |----    |------  |---     |---     |----    |---      |---      |---      |-------- |---     |---     |---|
+|Noisy               |1.97    | 3.32   |2.79    |2.70    |3.32    |0.92    |8.44     |9.35     |7.81    |6.13    |3.05    |3.37    |3.32    |2.79    |28.11    |8.53     |8.44     |14.77    |0.78    |1.40    |4.15|
+|FRCRN_SE_16K        |3.23    | 3.86   |3.47    |**3.83**|4.29    |0.95    |19.22    |19.16    |9.21    |7.60    |**3.59**|3.46    |**4.11**|3.20    |12.66    |21.16    |11.71    |**20.76**|0.37    |0.98    |**0.56**|
+|MossFormerGAN_SE_16K|**3.47**|**3.96**|**3.50**|3.73    |**4.40**|**0.96**|**19.45**|**19.36**|9.07    |**9.09**|3.57    |**3.50**|4.09    |**3.23**|25.98    |21.18    |**19.42**|20.20    |**0.34**|**0.79**|0.70|
+|MossFormer2_SE_48k  |3.16    | 3.77   |3.32    |3.58    |4.14    |0.95    |19.38    |19.22    |**9.61**|6.86    |3.53    |**3.50**|4.07    |3.22    |**12.05**|**21.84**|11.47    |16.69    |0.57    |1.72    |0.62|
