@@ -1,1 +1,1 @@
-# ClearerVoice-Studio: For Speech Enhancement Training
+# ClearerVoice-Studio: Train Speech Enhancement Models
