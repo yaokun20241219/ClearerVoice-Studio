@@ -52,34 +52,29 @@ python demo_with_more_comments.py
 
 You may activate each demo case by setting to True in `demo.py` and `demo_with_more_comments.py`.
 
-Sample example 1: use speech enhancement model `MossFormer2_SE_48K` to process one wave file of `samples/input.wav` and save the output wave file to `samples/output_MossFormer2_SE_48K.wav`
+4. **Use Scripts**
+
+Use `MossFormer2_SE_48K` model for fullband (48kHz) speech enhancement task:
 
 ```python
 from clearvoice import ClearVoice
 
 myClearVoice = ClearVoice(task='speech_enhancement', model_names=['MossFormer2_SE_48K'])
 
+#process single wave file
 output_wav = myClearVoice(input_path='samples/input.wav', online_write=False)
-
 myClearVoice.write(output_wav, output_path='samples/output_MossFormer2_SE_48K.wav')
-```
 
-Sample example 2: use speech enhancement model `MossFormer2_SE_48K` to process all input wave files in `samples/path_to_input_wavs/` and save all output files to `samples/path_to_output_wavs`
-
-```python
-from clearvoice import ClearVoice
-
-myClearVoice = ClearVoice(task='speech_enhancement', model_names=['MossFormer2_SE_48K'])
-
+#process wave directory
 myClearVoice(input_path='samples/path_to_input_wavs', online_write=True, output_path='samples/path_to_output_wavs')
-```
 
-Sample example 3: use speech enhancement model `MossFormer2_SE_48K` to process wave files listed in `samples/audio_samples.scp' file, and save all output files to 'samples/path_to_output_wavs_scp/'
-
-```python
-from clearvoice import ClearVoice
-
-myClearVoice = ClearVoice(task='speech_enhancement', model_names=['MossFormer2_SE_48K'])
-
+#process wave list file
 myClearVoice(input_path='samples/scp/audio_samples.scp', online_write=True, output_path='samples/path_to_output_wavs_scp')
 ```
+
+Parameter Description:
+- `task`: Choose one of the three tasks `speech_enhancement`, `speech_separation`, and `target_speaker_extraction`
+- `model_names`: List of model names, choose one or more models for the task
+- `input_path`: Path to the input audio file, input audio directory, or a list file (.scp) 
+- `online_write`: Set to `True` to enable saving the enhanced audio directly to local files during processing, otherwise, the enhanced audio is returned. (Only supports `False` for processing single wave file`)
+- `output_path`: Path to a file or a directory to save the enhanced audio
