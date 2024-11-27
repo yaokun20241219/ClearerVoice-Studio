@@ -1,4 +1,4 @@
-# speechscore
+# SpeechScore
 
 ## Table of Contents
 
@@ -8,7 +8,7 @@
 
 ## 1. Introduction
 
-speechscore is a wrapper designed for assessing speech quality. It includes a collection of commonly used speech quality metrics, as listed below:
+SpeechScore is a wrapper designed for assessing speech quality. It includes a collection of commonly used speech quality metrics, as listed below:
 | Index | Metrics | Short Description | Externel Link |
 |-------|---------|-------------|---------------|
 |1.| BSSEval {ISR, SAR, SDR} | ISR (Source Image-to-Spatial distortion Ratio) measures preservation/distortion of target source. SDR (Source-to-Distortion Ratio) measures global quality. SAR (Source-to-Artefact Ratio) measures the presence of additional artificial noise|(See <a href="https://github.com/sigsep/sigsep-mus-eval">the official museval page</a>)|
@@ -38,12 +38,12 @@ git clone https://github.com/modelscope/ClearerVoice-Studio.git
 
 2. **Create Conda Environment**
 
-If you haven't created conda envrionment for ClearerVoice, follow the instructions below:
+If you haven't created conda envrionment for ClearerVoice-Studio, follow the instructions below:
 
 ``` sh
 cd ClearerVoice-Studio
-conda create -n ClearerVoice python=3.8
-conda activate ClearerVoice
+conda create -n ClearerVoice-Studio python=3.8
+conda activate ClearerVoice-Studio
 pip install -r requirements.txt
 ```
 
