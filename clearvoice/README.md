@@ -76,6 +76,6 @@ myClearVoice(input_path='samples/scp/audio_samples.scp', online_write=True, outp
 Parameter Description:
 - `task`: Choose one of the three tasks `speech_enhancement`, `speech_separation`, and `target_speaker_extraction`
 - `model_names`: List of model names, choose one or more models for the task
-- `input_path`: Path to the input audio file, input audio directory, or a list file (.scp) 
-- `online_write`: Set to `True` to enable saving the enhanced audio directly to local files during processing, otherwise, the enhanced audio is returned. (Only supports `False` for processing single wave file`)
-- `output_path`: Path to a file or a directory to save the enhanced audio
+- `input_path`: Path to the input audio/video file, input audio/video directory, or a list file (.scp) 
+- `online_write`: Set to `True` to enable saving the enhanced/separated audio/video directly to local files during processing, otherwise, the enhanced/separated audio is returned. (Only supports `False` for `speech_enhancement`, `speech_separation` when processing single wave file`)
+- `output_path`: Path to a file or a directory to save the enhanced/separated audio/video file
