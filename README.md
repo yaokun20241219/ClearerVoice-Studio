@@ -12,15 +12,15 @@ Currently, the repo is under updating...
 ## Repository Structure
 
 ### 1. **ClearVoice**  
-[`ClearVoice`](https://github.com/modelscope/ClearerVoice-Studio/tree/main/clearvoice) is a unified inference platform. It runs on the pre-trained models for `speech enhancement`, `speech separation`, and `audio-visual target speaker extraction`. We release several pre-trained models that are trained on large datasets. These models can be directly integrated into your projects for speech processing. We plan to include more speech processing tasks in future.
+ClearVoice is a unified inference platform designed for speech processing tasks. It leverages our released pre-trained models for speech enhancement, speech separation, and audio-visual target speaker extraction, all trained on extensive datasets. If you are specifically interested in using the pre-trained models, ClearVoice is the ideal solution. Click on [`ClearVoice`](https://github.com/modelscope/ClearerVoice-Studio/tree/main/clearvoice) and follow our detailed instructions to get started.
 
-If you want to only use the pre-trained models for speech enhancement, speech separation, or audio-visual target speaker extraction, `ClearVoice` suits your purpose. Please click [`ClearVoice`](https://github.com/modelscope/ClearerVoice-Studio/tree/main/clearvoice) and refer to our instructions on the use of `ClearVoice`. 
+More speech processing tasks will be included in ClearVoice.
 
-### 2. **train**  
-The `train` folder includes scripts and resources to train models for all three tasks:
+### 2. **Train**  
+For advanced researchers and developers, we provide model finetune and training scripts for all the tasks:
 
-- **Speech enhancement**
-- **Speech separation**
+- **[Speech enhancement](train/speech_enhancement)**
+- **[Speech separation](train/speech_separation)**
 - **[Target speaker extraction](train/target_speaker_extraction)**
   - **Audio-only Speaker Extraction Conditioned on a Reference Speech**
   - **Audio-visual Speaker Extraction Conditioned on Face (Lip) Recording**
