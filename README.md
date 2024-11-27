@@ -28,7 +28,7 @@ For advanced researchers and developers, we provide model finetune and training 
   - **Neuro-steered Speaker Extraction Conditioned on EEG Signals**
 
 ### 3. **SpeechScore**  
-<a href="https://github.com/modelscope/ClearerVoice-Studio/tree/main/speechscore">`SpeechScore`<a/> is a speech quality assessment toolkit. It includes many popular speech metrics:
+<a href="https://github.com/modelscope/ClearerVoice-Studio/tree/main/speechscore">`SpeechScore`<a/> is a speech quality assessment toolkit. It can be used to assess the speech quality of your processed audio files and evaluate different model performances. It includes many popular speech metrics:
 
 - Signal-to-Noise Ratio (SNR)
 - Perceptual Evaluation of Speech Quality (PESQ)
@@ -37,7 +37,7 @@ For advanced researchers and developers, we provide model finetune and training 
 - Scale-Invariant Signal-to-Distortion Ratio (SI-SDR)
 - and many more quality benchmarks  
 
-This toolkit can be used to assess the speech quality of your processed audio files and evaluate different model performance. 
+
 
 ## What‘s new :fire:
 - [2024.11] Release of this repo
