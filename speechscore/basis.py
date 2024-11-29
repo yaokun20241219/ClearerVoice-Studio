@@ -19,7 +19,7 @@ class ScoreBasis:
         from museval.metrics import Framing
 
         #checking rate
-        audios = data['audio']
+        audios = data['audio'].copy()
         score_rate = data['rate']
 
         if self.score_rate is not None:
