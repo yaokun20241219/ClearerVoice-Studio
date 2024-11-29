@@ -1,5 +1,7 @@
-[![SVG Banners](https://svg-banners.vercel.app/api?type=origin&text1=ClearerVoice-Studio&text2=%20An%20AI-Powered%20Speech%20Processing%20Toolkit&width=1000&height=210)](https://github.com/Akshay090/svg-banners)
-    
+<div align="center">
+<img src="https://github.com/user-attachments/assets/a4ccbc60-5248-4dca-8cec-09a6385c6d0f" width="768" height="192">
+</div>
+
 <strong>ClearerVoice-Studio</strong> is an open-source, AI-powered speech processing toolkit designed for researchers, developers, and end-users. It provides capabilities of speech enhancement, speech separation, target speaker extraction, and more. The toolkit provides state-of-the-art pre-trained models, along with training and inference scripts, all accessible from this repository.
 
 #### 👉🏻[ClearVoice Demo](https://huggingface.co/spaces/alibabasglab/ClearVoice)👈🏻  | 👉🏻[SpeechScore Demo](https://huggingface.co/spaces/alibabasglab/SpeechScore)👈🏻
