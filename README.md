@@ -22,13 +22,13 @@ ClearVoice offers a user-friendly  solution for speech processing tasks such as 
 ### 2. **Train**  
 For advanced researchers and developers, we provide model finetune and training scripts for all the tasks offerred in ClearVoice and more:
 
-- **[Speech enhancement](train/speech_enhancement)** (16kHz & 48kHz)
-- **[Speech separation](train/speech_separation)** (8kHz & 16kHz)
-- **[Target speaker extraction](train/target_speaker_extraction)** (16kHz)
-  - **Audio-only Speaker Extraction Conditioned on a Reference Speech**
-  - **Audio-visual Speaker Extraction Conditioned on Face (Lip) Recording**
-  - **Audio-visual Speaker Extraction Conditioned on Body Gestures**
-  - **Neuro-steered Speaker Extraction Conditioned on EEG Signals**
+- **Task 1: [Speech enhancement](train/speech_enhancement)** (16kHz & 48kHz)
+- **Task 2: [Speech separation](train/speech_separation)** (8kHz & 16kHz)
+- **Task 3: [Target speaker extraction](train/target_speaker_extraction)** (16kHz)
+  - **Sub-Task 1: Audio-only Speaker Extraction Conditioned on a Reference Speech**
+  - **Sub-Task 2: Audio-visual Speaker Extraction Conditioned on Face (Lip) Recording**
+  - **Sub-Task 3: Audio-visual Speaker Extraction Conditioned on Body Gestures**
+  - **Sub-Task 4: Neuro-steered Speaker Extraction Conditioned on EEG Signals**
 
 Contributors are welcomed to include more model architectures and tasks!
 
