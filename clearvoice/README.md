@@ -17,7 +17,7 @@ ClearVoice offers a unified inference platform for `speech enhancement`, `speech
 |Speech Separation (16kHz)|`MossFormer2_SS_16K` ([link](https://huggingface.co/alibabasglab/MossFormer2_SS_16K))|
 |Audio-Visual Target Speaker Extraction (16kHz)|`AV_MossFormer2_TSE_16K` ([link](https://huggingface.co/alibabasglab/AV_MossFormer2_TSE_16K))|
 
-No need to manually download the pre-trained models. They are automatically downloaded during inference.
+You don't need to manually download the pre-trained models—they are automatically fetched during inference.
 
 ## 2. Usage
 
