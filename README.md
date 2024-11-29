@@ -7,7 +7,7 @@
 #### 👉🏻[ClearVoice Demo](https://huggingface.co/spaces/alibabasglab/ClearVoice)👈🏻  | 👉🏻[SpeechScore Demo](https://huggingface.co/spaces/alibabasglab/SpeechScore)👈🏻
 
 ---
-![GitHub Repo stars](https://img.shields.io/github/stars/modelscope/ClearerVoice-Studio) *Please help our community project. Star on GitHub!*
+![GitHub Repo stars](https://img.shields.io/github/stars/modelscope/ClearerVoice-Studio) Please support our community project 💖 by starring it on GitHub 🙏 
 
 ## News :fire:
 - [2024.11] FRCRN speech denoiser has been used more than 2.7 million times on [ModelScope](https://modelscope.cn/models/iic/speech_frcrn_ans_cirm_16k)
