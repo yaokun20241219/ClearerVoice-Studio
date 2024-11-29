@@ -4,7 +4,7 @@ from torch.utils.tensorboard import SummaryWriter
 import torch.nn.functional as F
 from torch.nn.parallel import DistributedDataParallel as DDP
 import torch.distributed as dist
-from losses.loss import loss_mossformer2_ss_16k
+from losses.loss import loss_mossformer2_ss
 
 class Solver(object):
     def __init__(self, args, model, optimizer, train_data, validation_data, test_data):
@@ -26,8 +26,8 @@ class Solver(object):
             self.model = DDP(self.model, device_ids=[self.args.local_rank],find_unused_parameters=True)
         self._init()
  
-        if self.args.network == 'MossFormer2_SS_16K':
-            self._run_one_epoch = self._run_one_epoch_mossformer2_ss_16k
+        if self.args.network in ['MossFormer2_SS_16K','MossFormer2_SS_8K'] :
+            self._run_one_epoch = self._run_one_epoch_mossformer2_ss
         else:
             print(f'_run_one_epoch is not implemented for {self.args.network}!')
 
@@ -229,7 +229,7 @@ class Solver(object):
                 print("Found new best model, dict saved")
             self.epoch = self.epoch + 1
 
-    def _run_one_epoch_mossformer2_ss_16k(self, data_loader, state='train'):
+    def _run_one_epoch_mossformer2_ss(self, data_loader, state='train'):
         num_batch = len(data_loader)
         mix_loss_print = 0.0
 
@@ -242,7 +242,7 @@ class Solver(object):
             labels = labels.to(self.device)
 
             Out_List = self.model(inputs)
-            loss = loss_mossformer2_ss_16k(self.args, inputs, labels, Out_List, self.device)
+            loss = loss_mossformer2_ss(self.args, inputs, labels, Out_List, self.device)
 
             if state=='train':
                 if self.args.accu_grad:

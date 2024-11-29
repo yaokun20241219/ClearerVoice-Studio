@@ -275,12 +275,16 @@ def get_dataloader(args, data_type):
         datasets,
         num_replicas=args.world_size,
         rank=args.local_rank) if args.distributed else None
-
-    if args.network == 'MossFormer2_SS_16K':
+    '''
+    if args.network in ['MossFormer2_SS_16K', 'MossFormer2_SS_8K'] :
         collate_fn = collate_fn_2x_wavs
     else:
         print(f'in dataloader, please specify a correct network type using args.network!')
         return
+    '''
+    # we use collate_fn_2x_wavs as default data collection func
+    collate_fn = collate_fn_2x_wavs
+    
     generator = data.DataLoader(datasets,
             batch_size = args.batch_size,
             shuffle = (sampler is None),

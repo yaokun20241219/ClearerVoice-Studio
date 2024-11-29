@@ -16,7 +16,7 @@ from itertools import permutations
 logger = logging.getLogger(__name__)
 
 
-def loss_mossformer2_ss_16k(args, inputs, labels, Out_List, device):
+def loss_mossformer2_ss(args, inputs, labels, Out_List, device):
     estimates = torch.stack(Out_List, dim=2)
     loss_sisnr = get_si_snr_with_pitwrapper(labels, estimates)
     return loss_sisnr

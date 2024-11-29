@@ -34,7 +34,7 @@ def main(args):
         print("\nTotal number of model parameters: {} \n".format(sum(p.numel() for p in model.parameters() if p.requires_grad)))
         
     
-    if args.network=='MossFormer2_SS_16K':
+    if args.network in ['MossFormer2_SS_16K','MossFormer2_SS_8K']:
         optimizer = torch.optim.Adam(model.parameters(), lr=args.init_learning_rate)
     else:
         print(f'in Main, {args.network} is not implemented!')

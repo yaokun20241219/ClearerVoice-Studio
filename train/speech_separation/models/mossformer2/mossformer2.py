@@ -736,11 +736,11 @@ class MossFormer(nn.Module):
         return out
 
 
-class MossFormer2_SS_16K(nn.Module):
+class MossFormer2_SS(nn.Module):
     """MossFormer2 model wrapper for outside calling"""
 
     def __init__(self, args):
-        super(MossFormer2_SS_16K, self).__init__()
+        super(MossFormer2_SS, self).__init__()
         self.model = MossFormer(
             in_channels=args.encoder_embedding_dim,
             out_channels=args.mossformer_sequence_dim,

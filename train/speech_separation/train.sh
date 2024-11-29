@@ -11,6 +11,10 @@ init_checkpoint_path=../../clearvoice/checkpoints/${network}/last_best_checkpoin
 print_freq=10  # No. steps waited for printing info
 checkpoint_save_freq=5000  #No. steps waited for saving new checkpoint
 
+if [ ! -d "${checkpoint_dir}" ]; then
+  mkdir -p ${checkpoint_dir}
+fi
+
 cp $config_pth $checkpoint_dir/config.yaml
 
 export PYTHONWARNINGS="ignore"
