@@ -56,8 +56,7 @@ def cal_LLR(ref_wav, deg_wav, srate):
         denominator = A_clean.dot(toeplitz(R_clean)).dot(A_clean.T)
 
         if (numerator/denominator) <= 0:
-            print(f'Numerator: {numerator}')
-            print(f'Denominator: {denominator}')
+            continue
 
         log_ = np.log(numerator / denominator)
         distortion.append(np.squeeze(log_))
