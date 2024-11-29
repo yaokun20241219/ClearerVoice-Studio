@@ -10,8 +10,9 @@
 ## News :fire:
 - [2024.11] FRCRN speech denoiser has been used more than 2.7 million times on [ModelScope](https://modelscope.cn/models/iic/speech_frcrn_ans_cirm_16k)
 - [2024.11] MossFormer speech separator has been used more than 2.5 million times on [ModelScope](https://modelscope.cn/models/iic/speech_mossformer_separation_temporal_8k)
-
-## Repository Structure
+- [2024.11] Release of this repository
+  
+## Contents of this repository
 
 ### 1. **ClearVoice**  
 ClearVoice is a unified inference platform designed for speech processing tasks. It leverages our released pre-trained models (such as [FRCRN](https://arxiv.org/abs/2206.07293), [MossFormer](https://arxiv.org/abs/2302.11824)) for speech enhancement, speech separation, and audio-visual target speaker extraction, all trained on extensive datasets. If you are specifically interested in using the pre-trained models, ClearVoice is the ideal solution. Click on [`ClearVoice`](https://github.com/modelscope/ClearerVoice-Studio/tree/main/clearvoice) and follow our detailed instructions to get started.
@@ -19,7 +20,7 @@ ClearVoice is a unified inference platform designed for speech processing tasks.
 More speech processing tasks will be included in ClearVoice.
 
 ### 2. **Train**  
-For advanced researchers and developers, we provide model finetune and training scripts for all the tasks:
+For advanced researchers and developers, we provide model finetune and training scripts for all the tasks offerred in ClearVoice and more:
 
 - **[Speech enhancement](train/speech_enhancement)**
 - **[Speech separation](train/speech_separation)**
@@ -30,7 +31,7 @@ For advanced researchers and developers, we provide model finetune and training 
   - **Neuro-steered Speaker Extraction Conditioned on EEG Signals**
 
 ### 3. **SpeechScore**  
-<a href="https://github.com/modelscope/ClearerVoice-Studio/tree/main/speechscore">`SpeechScore`<a/> is a speech quality assessment toolkit. It can be used to assess the speech quality of your processed audio files and evaluate different model performances. It includes many popular speech metrics:
+<a href="https://github.com/modelscope/ClearerVoice-Studio/tree/main/speechscore">`SpeechScore`<a/> is a speech quality assessment toolkit. We include it here to evaluate different model performance. SpeechScore includes many popular speech metrics:
 
 - Signal-to-Noise Ratio (SNR)
 - Perceptual Evaluation of Speech Quality (PESQ)
@@ -38,11 +39,6 @@ For advanced researchers and developers, we provide model finetune and training 
 - Deep Noise Suppression Mean Opinion Score (DNSMOS)
 - Scale-Invariant Signal-to-Distortion Ratio (SI-SDR)
 - and many more quality benchmarks  
-
-
-
-## What‘s new :fire:
-- [2024.11] Release of this repo
   
 ## Contact
 If you have any comments or questions about ClearerVoice-Studio, feel free to raise an issue in this repository or contact us directly at:
