@@ -39,6 +39,10 @@ We provided performance comparisons of our released models with the publically a
 
 ### Step-by-Step Guide
 
+If you haven't created a Conda environment for ClearerVoice-Studio yet, follow steps 1 and 2. Otherwise, skip directly to step 3.
+
+1. **Clone the Repository**
+
 ``` sh
 git clone https://github.com/modelscope/ClearerVoice-Studio.git
 ```
@@ -47,12 +51,12 @@ git clone https://github.com/modelscope/ClearerVoice-Studio.git
 
 ``` sh
 cd ClearerVoice-Studio
-conda create -n clearvoice python=3.8
-conda activate clearvoice
+conda create -n ClearerVoice-Studio python=3.8
+conda activate ClearerVoice-Studio
 pip install -r requirements.txt
 ```
 
-3. **Download Dataset**
+3. **Prepare Dataset**
    
 If you don't have any training dataset to start with, we recommend you to download the VoiceBank-DEMAND dataset ([link](https://datashare.ed.ac.uk/handle/10283/2826)]. You may store the dataset anywhere. What you need to start the model training is to create two scp files as shown in `data/tr_demand_28_spks_16k.scp` and `data/cv_demand_testset_16k.scp`. `data/tr_demand_28_spks_16k.scp` contains the training data list and `data/cv_demand_testset_16k.scp` contains the testing data list.
 
