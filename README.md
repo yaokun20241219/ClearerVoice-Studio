@@ -1,6 +1,6 @@
 [![SVG Banners](https://svg-banners.vercel.app/api?type=origin&text1=ClearerVoice-Studio&text2=%20AI%20Powered%20Speech%20Front-End%20Processing%20Toolkit&width=1000&height=210)](https://github.com/Akshay090/svg-banners)
     
-<strong>ClearerVoice-Studio</strong> is an open-source toolkit for **[speech enhancement](https://github.com/modelscope/ClearerVoice-Studio/tree/main/train/speech_enhancement)**, **[speech separation](https://github.com/modelscope/ClearerVoice-Studio/tree/main/train/speech_separation)**, and <a href="https://github.com/modelscope/ClearerVoice-Studio/blob/main/train/target_speaker_extraction">**target speaker extraction**<a/>, for both researchers and developers in speech processing. It contains state-of-the-art pre-trained models, training and inference scripts. This repository is organized into three main components: **[ClearVoice](https://github.com/modelscope/ClearerVoice-Studio/tree/main/clearvoice)**, **[Train](https://github.com/modelscope/ClearerVoice-Studio/tree/main/train)**, and **[SpeechScore](https://github.com/modelscope/ClearerVoice-Studio/tree/main/speechscore)**.
+<strong>ClearerVoice-Studio</strong> is an open-source toolkit for **[speech enhancement](https://github.com/modelscope/ClearerVoice-Studio/tree/main/train/speech_enhancement)**, **[speech separation](https://github.com/modelscope/ClearerVoice-Studio/tree/main/train/speech_separation)**, <a href="https://github.com/modelscope/ClearerVoice-Studio/blob/main/train/target_speaker_extraction">**target speaker extraction**<a/>, and more for researchers, developers, and end users in speech processing. It offers state-of-the-art pre-trained models, training and inference scripts. 
 
 #### 👉🏻[ClearVoice Demo](https://huggingface.co/spaces/alibabasglab/ClearVoice)👈🏻  
 #### 👉🏻[SpeechScore Demo](https://huggingface.co/spaces/alibabasglab/SpeechScore)👈🏻
@@ -14,6 +14,7 @@
 - Upcoming: More tasks will be added to ClearVoice.
   
 ## Contents of this repository
+This repository is organized into three main components: **[ClearVoice](https://github.com/modelscope/ClearerVoice-Studio/tree/main/clearvoice)**, **[Train](https://github.com/modelscope/ClearerVoice-Studio/tree/main/train)**, and **[SpeechScore](https://github.com/modelscope/ClearerVoice-Studio/tree/main/speechscore)**.
 
 ### 1. **ClearVoice**  
 ClearVoice offers a user-friendly  solution for speech denoising, separation, and extraction. Designed as a unified inference platform, it leverages our pre-trained models (e.g., [FRCRN](https://arxiv.org/abs/2206.07293), [MossFormer](https://arxiv.org/abs/2302.11824)) for speech enhancement, separation, and audio-visual target speaker extraction tasks, all trained on extensive datasets. If you're looking for a tool to improve speech quality, ClearVoice is the perfect choice. Simply click on [`ClearVoice`](https://github.com/modelscope/ClearerVoice-Studio/tree/main/clearvoice) and follow our detailed instructions to get started.
@@ -21,9 +22,9 @@ ClearVoice offers a user-friendly  solution for speech denoising, separation, an
 ### 2. **Train**  
 For advanced researchers and developers, we provide model finetune and training scripts for all the tasks offerred in ClearVoice and more:
 
-- **[Speech enhancement](train/speech_enhancement)**
-- **[Speech separation](train/speech_separation)**
-- **[Target speaker extraction](train/target_speaker_extraction)**
+- **[Speech enhancement](train/speech_enhancement)** (16kHz & 48kHz)
+- **[Speech separation](train/speech_separation)** (8kHz & 16kHz)
+- **[Target speaker extraction](train/target_speaker_extraction)** (16kHz)
   - **Audio-only Speaker Extraction Conditioned on a Reference Speech**
   - **Audio-visual Speaker Extraction Conditioned on Face (Lip) Recording**
   - **Audio-visual Speaker Extraction Conditioned on Body Gestures**
