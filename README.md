@@ -14,7 +14,7 @@
 ## Repository Structure
 
 ### 1. **ClearVoice**  
-ClearVoice is a unified inference platform designed for speech processing tasks. It leverages our released pre-trained models (such as FRCRN, MossFormer) for speech enhancement, speech separation, and audio-visual target speaker extraction, all trained on extensive datasets. If you are specifically interested in using the pre-trained models, ClearVoice is the ideal solution. Click on [`ClearVoice`](https://github.com/modelscope/ClearerVoice-Studio/tree/main/clearvoice) and follow our detailed instructions to get started.
+ClearVoice is a unified inference platform designed for speech processing tasks. It leverages our released pre-trained models (such as [FRCRN](https://arxiv.org/abs/2206.07293), [MossFormer](https://arxiv.org/abs/2302.11824)) for speech enhancement, speech separation, and audio-visual target speaker extraction, all trained on extensive datasets. If you are specifically interested in using the pre-trained models, ClearVoice is the ideal solution. Click on [`ClearVoice`](https://github.com/modelscope/ClearerVoice-Studio/tree/main/clearvoice) and follow our detailed instructions to get started.
 
 More speech processing tasks will be included in ClearVoice.
 
