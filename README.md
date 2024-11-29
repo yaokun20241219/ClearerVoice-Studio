@@ -1,6 +1,6 @@
 [![SVG Banners](https://svg-banners.vercel.app/api?type=origin&text1=ClearerVoice-Studio&text2=%20AI%20Powered%20Speech%20Front-End%20Processing%20Toolkit&width=1000&height=210)](https://github.com/Akshay090/svg-banners)
     
-<strong>ClearerVoice-Studio</strong> is an open-source toolkit for **[speech enhancement](https://github.com/modelscope/ClearerVoice-Studio/tree/main/train/speech_enhancement)**, **[speech separation](https://github.com/modelscope/ClearerVoice-Studio/tree/main/train/speech_separation)**, and <a href="https://github.com/modelscope/ClearerVoice-Studio/blob/main/train/target_speaker_extraction">**target speaker extraction**<a/>, for both researchers and developers in speech processing. It contains state-of-the-art pre-trained models, training and inference scripts. The repo is organized into three main components: **[ClearVoice](https://github.com/modelscope/ClearerVoice-Studio/tree/main/clearvoice)**, **[SpeechScore](https://github.com/modelscope/ClearerVoice-Studio/tree/main/speechscore)**, and **[Train](https://github.com/modelscope/ClearerVoice-Studio/tree/main/train)**.
+<strong>ClearerVoice-Studio</strong> is an open-source toolkit for **[speech enhancement](https://github.com/modelscope/ClearerVoice-Studio/tree/main/train/speech_enhancement)**, **[speech separation](https://github.com/modelscope/ClearerVoice-Studio/tree/main/train/speech_separation)**, and <a href="https://github.com/modelscope/ClearerVoice-Studio/blob/main/train/target_speaker_extraction">**target speaker extraction**<a/>, for both researchers and developers in speech processing. It contains state-of-the-art pre-trained models, training and inference scripts. This repository is organized into three main components: **[ClearVoice](https://github.com/modelscope/ClearerVoice-Studio/tree/main/clearvoice)**, **[SpeechScore](https://github.com/modelscope/ClearerVoice-Studio/tree/main/speechscore)**, and **[Train](https://github.com/modelscope/ClearerVoice-Studio/tree/main/train)**.
 
 #### 👉🏻[ClearVoice Demo](https://huggingface.co/spaces/alibabasglab/ClearVoice)👈🏻  
 #### 👉🏻[SpeechScore Demo](https://huggingface.co/spaces/alibabasglab/SpeechScore)👈🏻
@@ -45,7 +45,7 @@ For advanced researchers and developers, we provide model finetune and training 
 - [2024.11] Release of this repo
   
 ## Contact
-If you have any comment or question about ClearerVoice-Studio, please contact us by
+If you have any comments or questions about ClearerVoice-Studio, feel free to raise an issue in this repository or contact us directly at:
 - email: {shengkui.zhao, zexu.pan}@alibaba-inc.com
 
 
