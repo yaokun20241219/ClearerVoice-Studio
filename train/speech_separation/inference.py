@@ -46,12 +46,12 @@ if __name__ == "__main__":
     parser.add_argument('--config', help='config file path', action=yamlargparse.ActionConfigFile)
 
     parser.add_argument('--mode', type=str, default='inference', help='run train or inference')        
-    parser.add_argument('--checkpoint-dir', dest='checkpoint_dir', type=str, default='checkpoint_dir/FRCRN', help='the checkpoint dir')
+    parser.add_argument('--checkpoint-dir', dest='checkpoint_dir', type=str, default='checkpoints/MossFormer2_SS_16K', help='the checkpoint dir')
     parser.add_argument('--input-path', dest='input_path', type=str, help='input dir or scp file for saving noisy audio')
     parser.add_argument('--output-dir', dest='output_dir', type=str, help='output dir for saving processed audio')
     parser.add_argument('--use-cuda', dest='use_cuda', default=1, type=int, help='use cuda')
     parser.add_argument('--num-gpu', dest='num_gpu', type=int, default=1, help='the num gpus to use')
-    parser.add_argument('--network', type=str, help='select speech enhancement models: FRCRN_SE_16K, MossFormer2_SE_48K')
+    parser.add_argument('--network', type=str, help='select speech enhancement models: MossFormer2_SS_16K, MossFormer2_SS_8K')
     parser.add_argument('--sampling-rate', dest='sampling_rate', type=int, default=16000)
 
     #MossFormer2 model parameters

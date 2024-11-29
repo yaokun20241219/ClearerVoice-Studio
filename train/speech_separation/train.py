@@ -68,8 +68,8 @@ if __name__ == '__main__':
     # experiment setting
     parser.add_argument('--mode', type=str, default='train', help='run train or inference')
     parser.add_argument('--use-cuda', dest='use_cuda', default=1, type=int, help='use cuda')
-    parser.add_argument('--checkpoint_dir', type=str, default='checkpoints/FRCRN',help='the checkpoint dir')
-    parser.add_argument('--network', type=str, default='frcrn', help='the model network types to be loaded for speech enhancment: frcrn, mossformer2')
+    parser.add_argument('--checkpoint_dir', type=str, default='checkpoints/MossFormer2_SS_16K',help='the checkpoint dir')
+    parser.add_argument('--network', type=str, default='frcrn', help='the model network types to be loaded for speech enhancment: MossFormer2_SS_16K, MossFormer2_SS_8K')
     parser.add_argument('--train_from_last_checkpoint', type=int, help='0 or 1, whether to train from a pre-trained checkpoint, includes model weight, optimizer settings')
     parser.add_argument('--init_checkpoint_path', type=str, default = None, help='pre-trained model path for initilizing the model weights for a new training')
     parser.add_argument('--print_freq', type=int, default=10, help='No. steps waited for printing info')

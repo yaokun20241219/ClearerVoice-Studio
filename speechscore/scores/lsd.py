@@ -12,7 +12,7 @@ class LSD(ScoreBasis):
 
     def windowed_scoring(self, audios, score_rate):
         if len(audios) != 2:
-            raise ValueError('NB_PESQ needs a reference and a test signals.')
+            raise ValueError('LSD needs a reference and a test signals.')
         est = wav_to_spectrogram(audios[1], score_rate)
         target = wav_to_spectrogram(audios[0], score_rate)
         return cal_LSD(est, target)
