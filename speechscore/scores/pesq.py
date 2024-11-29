@@ -5,7 +5,7 @@ class PESQ(ScoreBasis):
         super(PESQ, self).__init__(name='PESQ')
         self.intrusive = False
         self.mono = True
-        self.fixed_rate = 16000
+        self.score_rate = 16000
 
     def windowed_scoring(self, audios, rate):
         from pesq import pesq
