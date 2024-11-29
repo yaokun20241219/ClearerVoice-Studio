@@ -53,9 +53,9 @@ If you want to try an experimental training of the speech separation model, we s
 
 - Step 2: Use the mixture generation scripts in [python format](https://github.com/mpariente/pywsj0-mix) or [matlab format](https://www.merl.com/research/highlights/deep-clustering/) to generate mixture datasets. Use the sampling rate either 8000Hz or 16000Hz.
 
-- Step 3: Create scp files as formatted in `data/tr_wsj0_2mix_16k.scp' for train, validation, and test.
+- Step 3: Create scp files as formatted in `data/tr_wsj0_2mix_16k.scp` for train, validation, and test.
 
-- Step 4: Replace the `tr_list' and `cv_list` paths for scp files in `config/train/MossFormer2_SS_16K.yaml`
+- Step 4: Replace the `tr_list` and `cv_list` paths for scp files in `config/train/MossFormer2_SS_16K.yaml`
 
 4. **Start Training**
 
