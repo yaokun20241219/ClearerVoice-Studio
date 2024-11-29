@@ -23,6 +23,8 @@ You don't need to manually download the pre-trained models—they are automatica
 
 ### Step-by-Step Guide
 
+If you haven't created a Conda environment for ClearerVoice-Studio yet, follow steps 1 and 2. Otherwise, skip directly to step 3.
+
 1. **Clone the Repository**
 
 ``` sh
