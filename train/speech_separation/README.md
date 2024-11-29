@@ -57,8 +57,8 @@ bash train.sh
 
 You may need to set the correct network in `train.sh` and choose either a fresh training or a finetune process using:
 ```
-network=MossFormer2_SS_16K #train MossFormer2_SS_16K model
-train_from_last_checkpoint=1 #set 1 to start training from the last checkpoint if exists, 
-init_checkpoint_path= #path to your initial model if start a finetune, otherwise, set to None
+network=MossFormer2_SS_16K              #train MossFormer2_SS_16K model
+train_from_last_checkpoint=1            #set 1 to start training from the last checkpoint if exists, 
+init_checkpoint_path=./                 #path to your initial model if start a finetune, otherwise, set to None
 ```
 
