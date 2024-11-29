@@ -32,6 +32,8 @@ SpeechScore is a wrapper designed for assessing speech quality. It includes a co
 
 ### Step-by-Step Guide
 
+If you haven't created a Conda environment for ClearerVoice-Studio yet, follow steps 1 and 2. Otherwise, skip directly to step 3.
+
 1. **Clone the Repository**
 
 ``` sh
@@ -39,8 +41,6 @@ git clone https://github.com/modelscope/ClearerVoice-Studio.git
 ```
 
 2. **Create Conda Environment**
-
-If you haven't created conda envrionment for ClearerVoice-Studio, follow the instructions below:
 
 ``` sh
 cd ClearerVoice-Studio
