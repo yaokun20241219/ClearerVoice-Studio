@@ -22,7 +22,7 @@ Instead of applying the recurrent neural networks (RNNs) that use traditional re
 
 MossFormer2 demonstrates remarkable performance in WSJ0-2/3mix, Libri2Mix, and WHAM!/WHAMR! benchmarks. Please refer to our [Paper](https://arxiv.org/abs/2312.11825) or the individual models using the standalone script ([link](https://github.com/alibabasglab/MossFormer2/tree/main/MossFormer2_standalone)). 
 
-We provided performance comparisons of our released models with the publically available models in [ClearVoice](https://github.com/modelscope/ClearerVoice-Studio/tree/main/clearvoice) page.
+We will provide performance comparisons of our released models with the publically available models in [ClearVoice](https://github.com/modelscope/ClearerVoice-Studio/tree/main/clearvoice) page.
 
 ## 2. Usage
 
