@@ -14,7 +14,14 @@
 - [2024.11] MossFormer speech separator has been used more than 2.5 million times on [ModelScope](https://modelscope.cn/models/iic/speech_mossformer_separation_temporal_8k)
 - [2024.11] Release of this repository
 - Upcoming: More tasks will be added to ClearVoice.
-  
+
+### 🌟 Why Choose ClearerVoice-Studio?
+
+- **Pre-Trained Models:** Includes cutting-edge pre-trained models, fine-tuned on extensive, high-quality datasets. No need to start from scratch!
+- **Ease of Use:** Designed for seamless integration with your projects, offering a simple yet flexible interface for inference and training.
+- **Comprehensive Features:** Combines advanced algorithms for multiple speech processing tasks in one platform.
+- **Community-Driven:** Built for researchers, developers, and enthusiasts to collaborate and innovate together.
+
 ## Contents of this repository
 This repository is organized into three main components: **[ClearVoice](https://github.com/modelscope/ClearerVoice-Studio/tree/main/clearvoice)**, **[Train](https://github.com/modelscope/ClearerVoice-Studio/tree/main/train)**, and **[SpeechScore](https://github.com/modelscope/ClearerVoice-Studio/tree/main/speechscore)**.
 
