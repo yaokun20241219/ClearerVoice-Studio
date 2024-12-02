@@ -88,7 +88,7 @@ class Solver(object):
     def _adjust_lr_warmup(self):
         self.warmup_steps = 15000
         if self.step_num < self.warmup_steps:
-            lr = self.args.init_learning_rate / 0.0001 * (64 ** (-0.5)) * self.step_num * (self.warmup_steps ** (-1.5))
+            lr = self.args.init_learning_rate / 0.001 * (64 ** (-0.5)) * self.step_num * (self.warmup_steps ** (-1.5))
             self.step_num +=1
             for param_group in self.optimizer.param_groups:
                 param_group['lr'] = lr
