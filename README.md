@@ -70,7 +70,7 @@ Alternatively, welcome to join our DingTalk and WeChat groups to share and discu
   </table>
 </p>
 
-### Friend Links
+## Friend Links
 Checkout some awesome Github repositories from Speech Lab of Institute for Intelligent Computing, Alibaba Group.
 
 <p align="center">
