@@ -54,7 +54,7 @@ Checkout some awesome Github repositories from Speech Lab of Institute for Intel
 
 <p align="center">
 <a href="https://github.com/FunAudioLLM/InspireMusic" target="_blank">
-        <img alt="Demo" src="https://img.shields.io/badge/Repo | Space-ClearVoice?labelColor=&label=ClearVoice&color=green"></a>
+        <img alt="Demo" src="https://img.shields.io/badge/Repo | Space-InspireMusic?labelColor=&label=ClearVoice&color=green"></a>
 </p>
 
 
