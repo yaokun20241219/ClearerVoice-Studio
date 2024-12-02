@@ -49,6 +49,15 @@ If you have any comments or questions about ClearerVoice-Studio, feel free to ra
 - email: {shengkui.zhao, zexu.pan}@alibaba-inc.com
 
 
+### Friend Links
+Checkout some awesome Github repositories from Speech Lab of Institute for Intelligent Computing, Alibaba Group.
+
+<p align="center">
+<a href="https://github.com/FunAudioLLM/InspireMusic" target="_blank">
+        <img alt="Demo" src="https://img.shields.io/badge/Repo | Space-ClearVoice?labelColor=&label=ClearVoice&color=green"></a>
+</p>
+
+
 ## Acknowledge
 ClearerVoice-Studio contains third-party components and code modified from some open-source repos, including: <br>
 [Speechbrain](https://github.com/speechbrain/speechbrain), [ESPnet](https://github.com/espnet), [TalkNet-ASD
