@@ -48,6 +48,27 @@ Contributors are welcomed to include more model architectures and tasks!
 If you have any comments or questions about ClearerVoice-Studio, feel free to raise an issue in this repository or contact us directly at:
 - email: {shengkui.zhao, zexu.pan}@alibaba-inc.com
 
+Alternatively, welcome to join our DingTalk and WeChat groups to share and discuss algorithms, technology, and user experience feedback. You may scan the following QR codes to join our official chat groups accordingly. 
+
+<p align="center">
+  <table>
+    <tr>
+      <td style="text-align:center;">
+        <a href="./asset/QR.jpg"><img alt="ClearVoice in DingTalk" src="https://img.shields.io/badge/ClearVoice-DingTalk-d9d9d9"></a>
+      </td>
+      <td style="text-align:center;">
+        <a href="./asset/QR.jpg"><img alt="ClearVoice in WeChat" src="https://img.shields.io/badge/ClearVoice-WeChat-d9d9d9"></a>
+      </td>
+    </tr>
+    <tr>
+       <td style="text-align:center;">
+      <img alt="Light" src="./asset/dingtalk.png" width="68%" />
+      <td style="text-align:center;">
+      <img alt="Light" src="./asset/qr.png" width="58%" />
+      </td>
+    </tr>
+  </table>
+</p>
 
 ### Friend Links
 Checkout some awesome Github repositories from Speech Lab of Institute for Intelligent Computing, Alibaba Group.
