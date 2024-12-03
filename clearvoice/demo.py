@@ -19,7 +19,7 @@ if False:
     myClearVoice = ClearVoice(task='speech_enhancement', model_names=['FRCRN_SE_16K'])
 
     ##1sd calling method: process an input waveform and return output waveform, then write to output_FRCRN_SE_16K.wav
-    output_wav = myClearVoice(input_path='samples/input.wav', online_write=False)
+    output_wav = myClearVoice(input_path='samples/input2.wav', online_write=False)
     myClearVoice.write(output_wav, output_path='samples/output_FRCRN_SE_16K.wav')
 
     ##2nd calling method: process all wav files in 'path_to_input_wavs/' and write outputs to 'path_to_output_wavs'

@@ -67,6 +67,8 @@ def decode_one_audio_mossformer2_ss_16k(model, device, inputs, args):
     stride = int(window * 0.75)  # Decoding stride if segmentation is used
     b, t = inputs.shape  # Get batch size and input length
 
+    rms_input = (inputs ** 2).mean() ** 0.5
+
     # Check if input length exceeds one-time decode length to decide on segmentation
     if t > args.sampling_rate * args.one_time_decode_length:
         decode_do_segment = True  # Enable segment decoding for long sequences
@@ -111,14 +113,10 @@ def decode_one_audio_mossformer2_ss_16k(model, device, inputs, args):
         for spk in range(args.num_spks):
             out.append(out_list[spk][0, :].detach().cpu().numpy())  # Append output for each speaker
 
-    # Normalize the outputs to the maximum absolute value for each speaker
-    max_abs = 0
+    # Normalize the outputs back to the input magnitude for each speaker
     for spk in range(args.num_spks):
-        if max_abs < max(abs(out[spk])):
-            max_abs = max(abs(out[spk]))
-    for spk in range(args.num_spks):
-        out[spk] = out[spk] / max_abs  # Normalize output by max absolute value
-
+        rms_out = (out[spk] ** 2).mean() ** 0.5
+        out[spk] = out[spk] / rms_out * rms_input
     return out  # Return the list of normalized outputs
 
 def decode_one_audio_frcrn_se_16k(model, device, inputs, args):

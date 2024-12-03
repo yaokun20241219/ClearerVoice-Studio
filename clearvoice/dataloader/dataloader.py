@@ -36,7 +36,7 @@ def audioread(path, sampling_rate):
     data, fs = sf.read(path)
     
     # Normalize the audio data.
-    data = audio_norm(data)
+    data, scalar = audio_norm(data)
     
     # Resample the audio if the sample rate is different from the target sampling rate.
     if fs != sampling_rate:
@@ -47,7 +47,7 @@ def audioread(path, sampling_rate):
         data = data[:, 0]
     
     # Return the processed audio data.
-    return data
+    return data, scalar
 
 def audio_norm(x):
     """
@@ -87,7 +87,7 @@ def audio_norm(x):
     x = x * scalarx
     
     # Return the doubly normalized audio signal.
-    return x
+    return x, 1/(scalar * scalarx + EPS)
 
 class DataReader(object):
     """
@@ -155,13 +155,13 @@ class DataReader(object):
         utt_id = path.split('/')[-1]
         
         # Read and normalize the audio data, converting it to float32 for processing.
-        data = audioread(path, self.sampling_rate).astype(np.float32)
-        
+        data, scalar = audioread(path, self.sampling_rate)        
+        data = data.astype(np.float32)
         # Reshape the data to ensure it's in the format [1, data_length].
         inputs = np.reshape(data, [1, data.shape[0]])
         
         # Return the reshaped audio data, utterance ID, and the length of the original data.
-        return inputs, utt_id, data.shape[0]
+        return inputs, utt_id, data.shape[0], scalar
 
 class Wave_Processor(object):
     """
