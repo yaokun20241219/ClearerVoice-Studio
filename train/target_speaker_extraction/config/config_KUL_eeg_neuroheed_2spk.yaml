@@ -14,9 +14,9 @@ ref_sr: 128         # reference sampleing rate, lip: 25 , gesture: 15, eeg: 128
 
 # dataloader
 num_workers: 8
-batch_size: 4         # 2-GPU training with a total effective batch size of 8
-accu_grad: 0
-effec_batch_size: 4   # per GPU, only used if accu_grad is set to 1, must be multiple times of batch size
+batch_size: 4         # 2-GPU training with a total effective batch size of 16
+accu_grad: 1
+effec_batch_size: 8   # per GPU, only used if accu_grad is set to 1, must be multiple times of batch size
 max_length: 10        # truncate the utterances in dataloader, in seconds 
 
 # network settings
