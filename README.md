@@ -10,7 +10,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/modelscope/ClearerVoice-Studio) Please support our community project 💖 by starring it on GitHub 🙏 
 
 ## News :fire:
-- [2024.11] FRCRN speech denoiser has been used more than 2.7 million times on [ModelScope](https://modelscope.cn/models/iic/speech_frcrn_ans_cirm_16k)
+- [2024.11] FRCRN speech denoiser has been used more than 2.8 million times on [ModelScope](https://modelscope.cn/models/iic/speech_frcrn_ans_cirm_16k)
 - [2024.11] MossFormer speech separator has been used more than 2.5 million times on [ModelScope](https://modelscope.cn/models/iic/speech_mossformer_separation_temporal_8k)
 - [2024.11] Release of this repository
 - Upcoming: More tasks will be added to ClearVoice.
