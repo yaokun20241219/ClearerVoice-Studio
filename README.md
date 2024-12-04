@@ -83,6 +83,10 @@ Checkout some awesome Github repositories from Speech Lab of Institute for Intel
 <p align="center">
 <a href="https://github.com/FunAudioLLM/InspireMusic" target="_blank">
         <img alt="Demo" src="https://img.shields.io/badge/Repo | Space-InspireMusic?labelColor=&label=InspireMusic&color=green"></a>
+<a href="https://github.com/modelscope/FunASR" target="_blank">
+        <img alt="Github" src="https://img.shields.io/badge/Repo | Space-FunASR?labelColor=&label=FunASR&color=green"></a>
+<a href="https://github.com/FunAudioLLM" target="_blank">
+        <img alt="Demo" src="https://img.shields.io/badge/Repo | Space-FunAudioLLM?labelColor=&label=FunAudioLLM&color=green"></a>
 </p>
 
 
