@@ -324,7 +324,7 @@ class Solver(object):
             
             if loss_gen is not None:
                 total_loss += loss_gen.data.cpu()
-            #total_loss += loss_gen.clone().detach()
+
         return total_loss / (i+1)
 
 

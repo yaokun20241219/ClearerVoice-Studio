@@ -40,7 +40,7 @@ def audio_norm(x):
     rmsx = pow_x[pow_x>avg_pow_x].mean()**0.5
     scalarx = 10 ** (-25 / 20) / (rmsx + EPS)
     x = x * scalarx
-    return x
+    return x, 1/(scalar * scalarx + EPS)
 
 class DataReader(object):
     def __init__(self, args):
@@ -49,9 +49,10 @@ class DataReader(object):
     def extract_feature(self, path):
         #path = path['inputs']
         utt_id = path.split('/')[-1]
-        data = audioread(path, self.sampling_rate).astype(np.float32)
+        data, scalar = audioread(path, self.sampling_rate) #.astype(np.float32)
+        data = data.astype(np.float32)
         inputs = np.reshape(data, [1, data.shape[0]])
-        return inputs, utt_id, data.shape[0]
+        return inputs, utt_id, data.shape[0], scalar
 
     def __len__(self):
         return len(self.file_list)

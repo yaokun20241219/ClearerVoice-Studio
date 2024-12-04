@@ -33,10 +33,10 @@ def inference(args):
         num_samples = len(data_reader)
         print('Decoding...')
         for idx in range(num_samples):
-            input_audio, wav_id, input_len = data_reader[idx]
+            input_audio, wav_id, input_len, scalar = data_reader[idx]
             print(f'audio: {wav_id}')
             output_audio = decode_one_audio(model, device, input_audio, args) 
-            output_audio = output_audio[:input_len]
+            output_audio = output_audio[:input_len] * scalar
             sf.write(os.path.join(output_wave_dir, wav_id), output_audio, args.sampling_rate)
     print('Done!')
 if __name__ == "__main__":
