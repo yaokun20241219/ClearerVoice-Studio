@@ -71,7 +71,7 @@ Alternatively, welcome to join our DingTalk and WeChat groups to share and discu
        <td style="text-align:center;">
       <img alt="Light" src="./asset/dingtalk.png" width="68%" />
       <td style="text-align:center;">
-      <img alt="Light" src="./asset/qr.png" width="48%" />
+      <img alt="Light" src="./asset/qr.png" width="40%" />
       </td>
     </tr>
   </table>
