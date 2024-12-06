@@ -42,6 +42,7 @@ class Solver(object):
         self.best_val_loss = float("inf")
         self.val_no_impv = 0
         self.start_epoch=1
+        self.epoch = 0
 
         if self.args.train_from_last_checkpoint:
             self._load_model(f'{self.args.checkpoint_dir}/last_checkpoint.pt', load_training_stat=True)
@@ -50,6 +51,7 @@ class Solver(object):
             if self.print: print(f'Init model from {self.args.init_from}, and start new training')
         else:
             if self.print: print('Start new training from scratch')
+        self._save_model(self.args.checkpoint_dir+"/last_checkpoint.pt")
 
         
     def _load_model(self, path, load_optimizer=False, load_training_stat=False):
@@ -73,11 +75,22 @@ class Solver(object):
         # load the training states
         if load_training_stat:
             self.optimizer.load_state_dict(checkpoint['optimizer'])
-            self.start_epoch=checkpoint['epoch']
             self.step_num = checkpoint['step_num']
             self.best_val_loss = checkpoint['best_val_loss']
             self.val_no_impv = checkpoint['val_no_impv']
+            self.start_epoch=checkpoint['epoch']
+            self.epoch = self.start_epoch-1
             if self.print: print("Resume training from epoch: {}".format(self.start_epoch))
+
+    def _save_model(self, path):
+        if self.print:
+            checkpoint = {'model': self.model.state_dict(),
+                            'optimizer': self.optimizer.state_dict(),
+                            'epoch': self.epoch+1,
+                            'step_num': self.step_num,
+                            'best_val_loss': self.best_val_loss,
+                            'val_no_impv': self.val_no_impv}
+            torch.save(checkpoint, path)
         
     def _print_lr(self):
         optim_state = self.optimizer.state_dict()
@@ -95,14 +108,14 @@ class Solver(object):
             
 
     def train(self):
-        for epoch in range(self.start_epoch, self.args.max_epoch+1):
-            if self.args.distributed: self.args.train_sampler.set_epoch(epoch)
+        for self.epoch in range(self.start_epoch, self.args.max_epoch+1):
+            if self.args.distributed: self.args.train_sampler.set_epoch(self.epoch)
             # Train
             self.model.train()
             start = time.time()
             tr_loss = self._run_one_epoch(data_loader = self.train_data)
             if self.args.distributed: tr_loss = self._reduce_tensor(tr_loss)
-            if self.print: print('Train Summary | End of Epoch {0} | Time {1:.2f}s | ''Train Loss {2:.3f}'.format(epoch, time.time() - start, tr_loss))
+            if self.print: print('Train Summary | End of Epoch {0} | Time {1:.2f}s | ''Train Loss {2:.3f}'.format(self.epoch, time.time() - start, tr_loss))
 
             # Validation
             self.model.eval()
@@ -112,7 +125,7 @@ class Solver(object):
                 if self.args.distributed: val_loss = self._reduce_tensor(val_loss)
             if self.print: print('Valid Summary | End of Epoch {0} | Time {1:.2f}s | '
                       'Valid Loss {2:.3f}'.format(
-                          epoch, time.time() - start, val_loss))
+                          self.epoch, time.time() - start, val_loss))
 
 
             # Test
@@ -123,7 +136,7 @@ class Solver(object):
                 if self.args.distributed: test_loss = self._reduce_tensor(test_loss)
             if self.print: print('Test Summary | End of Epoch {0} | Time {1:.2f}s | '
                       'Test Loss {2:.3f}'.format(
-                          epoch, time.time() - start, test_loss))
+                          self.epoch, time.time() - start, test_loss))
 
 
             # Check whether to early stop and to reduce learning rate
@@ -154,20 +167,13 @@ class Solver(object):
 
             if self.print:
                 # Tensorboard logging
-                self.writer.add_scalar('Train_loss', tr_loss, epoch)
-                self.writer.add_scalar('Validation_loss', val_loss, epoch)
-                self.writer.add_scalar('Test_loss', test_loss, epoch)
+                self.writer.add_scalar('Train_loss', tr_loss, self.epoch)
+                self.writer.add_scalar('Validation_loss', val_loss, self.epoch)
+                self.writer.add_scalar('Test_loss', test_loss, self.epoch)
 
-                # Save model
-                checkpoint = {'model': self.model.state_dict(),
-                                'optimizer': self.optimizer.state_dict(),
-                                'epoch': epoch+1,
-                                'step_num': self.step_num,
-                                'best_val_loss': self.best_val_loss,
-                                'val_no_impv': self.val_no_impv}
-                torch.save(checkpoint, self.args.checkpoint_dir+"/last_checkpoint.pt")
+                self._save_model(self.args.checkpoint_dir+"/last_checkpoint.pt")
                 if find_best_model:
-                    torch.save(checkpoint, self.args.checkpoint_dir+"/last_best_checkpoint.pt")
+                    self._save_model(self.args.checkpoint_dir+"/last_best_checkpoint.pt")
                     print("Fund new best model, dict saved")
 
 
