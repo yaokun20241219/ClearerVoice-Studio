@@ -69,9 +69,9 @@ Alternatively, welcome to join our DingTalk and WeChat groups to share and discu
     </tr>
     <tr>
        <td style="text-align:center;">
-      <img alt="Light" src="./asset/dingtalk .png" width="68%" />
+      <img alt="Light" src="./asset/dingtalk.png" width="68%" />
       <td style="text-align:center;">
-      <img alt="Light" src="./asset/qr .png" width="58%" />
+      <img alt="Light" src="./asset/qr.png" width="58%" />
       </td>
     </tr>
   </table>
