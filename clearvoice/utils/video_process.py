@@ -30,7 +30,7 @@ def process_tse(args, model, device, data_reader, output_wave_dir):
 	assert args.sampling_rate == 16000
 	with torch.no_grad():
 		for videoPath in data_reader:  # Loop over all video samples
-			savFolder = videoPath.split('/')[-1]
+			savFolder = videoPath.split(os.path.sep)[-1]
 			video_args.savePath = f'{output_wave_dir}/{savFolder.split(".")[0]}/'
 			video_args.videoPath = videoPath
 			main(video_args, args)
@@ -273,7 +273,7 @@ def evaluate_network(files, video_args, args):
 	est_sources = []
 	for file in tqdm.tqdm(files, total = len(files)):
 
-		fileName = os.path.splitext(file.split('/')[-1])[0] # Load audio and video
+		fileName = os.path.splitext(file.split(os.path.sep)[-1])[0] # Load audio and video
 		audio, _ = sf.read(os.path.join(video_args.pycropPath, fileName + '.wav'), dtype='float32')
 
 		video = cv2.VideoCapture(os.path.join(video_args.pycropPath, fileName + '.avi'))
