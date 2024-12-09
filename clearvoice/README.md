@@ -45,8 +45,6 @@ pip install -r requirements.txt
 ``` sh
 cd clearvoice
 python demo.py
-## web demo
-streamlit run streamlit_app.py
 ```
 
 or 
@@ -55,6 +53,15 @@ or
 cd clearvoice
 python demo_with_more_comments.py
 ```
+
+or 
+
+``` sh
+cd clearvoice
+## The web demo:
+streamlit run streamlit_app.py
+```
+
 
 You may activate each demo case by setting to True in `demo.py` and `demo_with_more_comments.py`.
 
