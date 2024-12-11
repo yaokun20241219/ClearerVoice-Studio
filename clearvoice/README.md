@@ -56,7 +56,9 @@ python demo_with_more_comments.py
 
 
 
-You may activate each demo case by setting to True in `demo.py` and `demo_with_more_comments.py`.
+- You may activate each demo case by setting to True in `demo.py` and `demo_with_more_comments.py`.
+- Supported audio format: .flac .wav
+- Supported video format: .avi .mp4 .mov .webm
 
 4. **Use Scripts**
 
