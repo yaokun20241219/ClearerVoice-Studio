@@ -87,6 +87,8 @@ Checkout some awesome Github repositories from Speech Lab of Institute for Intel
         <img alt="Github" src="https://img.shields.io/badge/Repo | Space-FunASR?labelColor=&label=FunASR&color=green"></a>
 <a href="https://github.com/FunAudioLLM" target="_blank">
         <img alt="Demo" src="https://img.shields.io/badge/Repo | Space-FunAudioLLM?labelColor=&label=FunAudioLLM&color=green"></a>
+<a href="https://github.com/modelscope/3D-Speaker" target="_blank">
+        <img alt="Demo" src="https://img.shields.io/badge/Repo | Space-3D-Speaker?labelColor=&label=3D-Speaker&color=green"></a>
 </p>
 
 
