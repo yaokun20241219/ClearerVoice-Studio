@@ -35,20 +35,26 @@ class SpeechModel:
         - args: Argument parser object containing settings like whether to use CUDA (GPU) or not.
         """
         # Check if a GPU is available
-        if torch.cuda.is_available():
-            # Find the GPU with the most free memory using a custom method
+        if torch.backends.mps.is_available():  # 优先检查 MPS 是否可用
+            print("Using MPS device")
+            args.use_cuda = 0  # MPS 和 CUDA 不能同时使用
+            self.device = torch.device('mps')
+        elif torch.cuda.is_available():  # 然后检查 CUDA 是否可用
             free_gpu_id = self.get_free_gpu()
             if free_gpu_id is not None:
+                print(f"Using CUDA device: {free_gpu_id}")
                 args.use_cuda = 1
                 torch.cuda.set_device(free_gpu_id)
+                print('GPU is found and used!')
                 self.device = torch.device('cuda')
             else:
                 # If no GPU is detected, use the CPU
-                #print("No GPU found. Using CPU.")
+                print("No GPU found. Using CPU.")
                 args.use_cuda = 0
                 self.device = torch.device('cpu')
         else:
             # If no GPU is detected, use the CPU
+            print("Using CPU device")
             args.use_cuda = 0
             self.device = torch.device('cpu')
 
