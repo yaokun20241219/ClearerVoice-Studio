@@ -37,8 +37,9 @@ class SpeechModel:
         # Check if a GPU is available
         if torch.backends.mps.is_available():  # 优先检查 MPS 是否可用
             print("Using MPS device")
-            args.use_cuda = 0  # MPS 和 CUDA 不能同时使用
+            args.use_cuda = 2  # MPS 和 CUDA 不能同时使用
             self.device = torch.device('mps')
+            print(f"检查当前使用的设备：{self.device}")
         elif torch.cuda.is_available():  # 然后检查 CUDA 是否可用
             free_gpu_id = self.get_free_gpu()
             if free_gpu_id is not None:
@@ -154,7 +155,7 @@ class SpeechModel:
                  state[key] = pretrained_model['module.'+key]
             elif self.print: print(f'{key} not loaded')
         self.model.load_state_dict(state)
-        #print(f'Successfully loaded {model_name} for decoding')
+        print(f'Successfully loaded {model_name} for decoding')
 
     def decode(self):
         """
@@ -346,10 +347,12 @@ class CLS_FRCRN_SE_16K(SpeechModel):
         # Load pre-trained model checkpoint
         self.load_model()
         
-        # Move model to the appropriate device (GPU/CPU)
+        # Move model to the appropriate device (GPU/CPU/MPS)
+        #通常情况下，当模型已经在 CPU 上时，不需要显式地调用 to 方法，因为默认情况下，模型是在 CPU 上创建的
         if args.use_cuda == 1:
             self.model.to(self.device)
-        
+        elif args.use_cuda == 2:
+            self.model.to(self.device)
         # Set the model to evaluation mode (no gradient calculation)
         self.model.eval()
 
@@ -376,12 +379,19 @@ class CLS_MossFormer2_SE_48K(SpeechModel):
         # Load pre-trained model checkpoint
         self.load_model()
         
+        # ⭐️⭐️如果是cuda这里也需要修改
         # Move model to the appropriate device (GPU/CPU)
         if args.use_cuda == 1:
             self.model.to(self.device)
+        elif args.use_cuda == 2:
+            self.model.to(self.device)
+
         
         # Set the model to evaluation mode (no gradient calculation)
         self.model.eval()
+                # 打印模型所在的设备
+        print(f"当前设备: {self.device}")
+        print(f"模型所在的设备: {next(self.model.parameters()).device}")
 
 class CLS_MossFormerGAN_SE_16K(SpeechModel):
     """
@@ -409,6 +419,9 @@ class CLS_MossFormerGAN_SE_16K(SpeechModel):
         # Move model to the appropriate device (GPU/CPU)
         if args.use_cuda == 1:
             self.model.to(self.device)
+        elif args.use_cuda == 2:
+            self.model.to(self.device)
+
         
         # Set the model to evaluation mode (no gradient calculation)
         self.model.eval()
@@ -439,6 +452,9 @@ class CLS_MossFormer2_SS_16K(SpeechModel):
         # Move model to the appropriate device (GPU/CPU)
         if args.use_cuda == 1:
             self.model.to(self.device)
+        elif args.use_cuda == 2:
+            self.model.to(self.device)
+
         
         # Set the model to evaluation mode (no gradient calculation)
         self.model.eval()
@@ -471,6 +487,9 @@ class CLS_AV_MossFormer2_TSE_16K(SpeechModel):
         # Move model to the appropriate device (GPU/CPU)
         if args.use_cuda == 1:
             self.model.to(self.device)
+        elif args.use_cuda == 2:
+            self.model.to(self.device)
+
         
         # Set the model to evaluation mode (no gradient calculation)
         self.model.eval()

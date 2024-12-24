@@ -2,7 +2,7 @@
 
 # Log 
 seed: 777
-use_cuda: 1           # 1 for True, 0 for False
+use_cuda: 1           # 1 for True, 0 for False  #todo 这里待确认怎么修改mps
 
 # dataset
 speaker_no: 2

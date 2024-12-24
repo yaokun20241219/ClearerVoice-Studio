@@ -1,6 +1,6 @@
 #!/bin/bash 
 mode: 'train'
-use_cuda: 1 # 1 for True, 0 for False
+use_cuda: 1 # 1 for True, 0 for False #todo 这里待确认怎么修改mps
 
 sampling_rate: 16000
 network: "MossFormerGAN_SE_16K"  ##network type

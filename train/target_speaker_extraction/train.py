@@ -15,7 +15,12 @@ def main(args):
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
     torch.manual_seed(args.seed)
-    device = torch.device('cuda') if args.use_cuda else torch.device('cpu')
+    if args.use_cuda == 1:
+        device = torch.device('cuda')
+    elif args.use_cuda == 2:
+        device = torch.device('mps')
+    else:
+        device = torch.device('cpu')
     args.device = device
 
     if args.distributed:

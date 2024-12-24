@@ -32,6 +32,7 @@ def decode_one_audio(model, device, inputs, args):
     Returns:
         list: A list of decoded audio outputs for each speaker.
     """
+    print(f"检查当前使用的设备：{device}")
     # Select decoding function based on the network type specified in args
     if args.network == 'FRCRN_SE_16K':
         return decode_one_audio_frcrn_se_16k(model, device, inputs, args)

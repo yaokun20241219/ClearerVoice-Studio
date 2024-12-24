@@ -34,6 +34,7 @@ class network_wrapper(nn.Module):
         parser.add_argument('--checkpoint-dir', dest='checkpoint_dir', type=str, default='checkpoints/FRCRN_SE_16K', help='Checkpoint directory')
         parser.add_argument('--input-path', dest='input_path', type=str, help='Path for noisy audio input')
         parser.add_argument('--output-dir', dest='output_dir', type=str, help='Directory for enhanced audio output')
+        #todo 待确认还有哪里需要对这个cuda进行修正
         parser.add_argument('--use-cuda', dest='use_cuda', default=1, type=int, help='Enable CUDA (1=True, 0=False)')
         parser.add_argument('--num-gpu', dest='num_gpu', type=int, default=1, help='Number of GPUs to use')
 
@@ -68,6 +69,7 @@ class network_wrapper(nn.Module):
         parser.add_argument('--checkpoint-dir', dest='checkpoint_dir', type=str, default='checkpoints/FRCRN_SE_16K', help='Checkpoint directory')
         parser.add_argument('--input-path', dest='input_path', type=str, help='Path for mixed audio input')
         parser.add_argument('--output-dir', dest='output_dir', type=str, help='Directory for separated audio output')
+        #todo 待确认还有哪里需要对这个cuda进行修正        
         parser.add_argument('--use-cuda', dest='use_cuda', default=1, type=int, help='Enable CUDA (1=True, 0=False)')
         parser.add_argument('--num-gpu', dest='num_gpu', type=int, default=1, help='Number of GPUs to use')
 
@@ -103,6 +105,7 @@ class network_wrapper(nn.Module):
         parser.add_argument('--checkpoint-dir', dest='checkpoint_dir', type=str, default='checkpoint_dir/AV_MossFormer2_TSE_16K', help='Checkpoint directory')
         parser.add_argument('--input-path', dest='input_path', type=str, help='Path for mixed audio input')
         parser.add_argument('--output-dir', dest='output_dir', type=str, help='Directory for separated audio output')
+        #todo 待确认还有哪里需要对这个cuda进行修正
         parser.add_argument('--use-cuda', dest='use_cuda', default=1, type=int, help='Enable CUDA (1=True, 0=False)')
         parser.add_argument('--num-gpu', dest='num_gpu', type=int, default=1, help='Number of GPUs to use')
 

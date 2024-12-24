@@ -43,11 +43,13 @@ def read_and_config_file(input_path, decode=0):
     return processed_list
 
 def load_checkpoint(checkpoint_path, use_cuda):
-    #if use_cuda:
-    #    checkpoint = torch.load(checkpoint_path)
-    #else:
-    checkpoint = torch.load(
-        checkpoint_path, map_location=lambda storage, loc: storage)
+    # todo 下面cuda和mps的代码待测试
+    # if use_cuda == 2:
+    #         checkpoint = torch.load(checkpoint_path, map_location=torch.device('mps'))
+    # elif use_cuda == 1:
+    #         checkpoint = torch.load(checkpoint_path)
+    # else:
+    checkpoint = torch.load(checkpoint_path, map_location=lambda storage, loc: storage)
     return checkpoint
 
 def get_learning_rate(optimizer):

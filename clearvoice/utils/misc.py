@@ -68,7 +68,10 @@ def load_checkpoint(checkpoint_path, use_cuda):
     Returns:
         dict: The loaded checkpoint containing model parameters.
     """
-    #if use_cuda:
+    #todo 下面cuda和mps的代码待测试
+    # if use_cuda == 2:
+    #         checkpoint = torch.load(checkpoint_path, map_location=torch.device('mps'))
+    #elif use_cuda ==1:
     #    checkpoint = torch.load(checkpoint_path)  # Load using CUDA
     #else:
     checkpoint = torch.load(checkpoint_path, map_location=lambda storage, loc: storage)  # Load to CPU

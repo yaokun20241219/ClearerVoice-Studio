@@ -15,7 +15,12 @@ from networks import network_wrapper
 warnings.filterwarnings("ignore")
 
 def inference(args):
-    device = torch.device('cuda') if args.use_cuda==1 else torch.device('cpu')
+    if args.use_cuda == 1:
+        device = torch.device('cuda')
+    elif args.use_cuda == 2:
+        device = torch.device('mps')
+    else:
+        device = torch.device('cpu')
     print(device)
     print('creating model...')
     model = network_wrapper(args).se_network
@@ -48,6 +53,8 @@ if __name__ == "__main__":
     parser.add_argument('--checkpoint-dir', dest='checkpoint_dir', type=str, default='checkpoint_dir/FRCRN', help='the checkpoint dir')
     parser.add_argument('--input-path', dest='input_path', type=str, help='input dir or scp file for saving noisy audio')
     parser.add_argument('--output-dir', dest='output_dir', type=str, help='output dir for saving processed audio')
+    
+    #todo 待确认还有哪里需要对这个cuda进行修正
     parser.add_argument('--use-cuda', dest='use_cuda', default=1, type=int, help='use cuda')
     parser.add_argument('--num-gpu', dest='num_gpu', type=int, default=1, help='the num gpus to use')
     parser.add_argument('--network', type=str, help='select speech enhancement models: FRCRN_SE_16K, MossFormer2_SE_48K')

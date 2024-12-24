@@ -76,6 +76,7 @@ class Solver(object):
             with open(ckpt_name, 'r') as f:
                 model_name = f.readline().strip()
             checkpoint_path = os.path.join(self.args.checkpoint_dir, model_name)
+            #todo 待确认对mps的支持，和这里把cuda屏蔽的原因
             #checkpoint = self.load_checkpoint(checkpoint_path, use_cuda)
             checkpoint = torch.load(
                 checkpoint_path, map_location=lambda storage, loc: storage)
@@ -99,11 +100,15 @@ class Solver(object):
             return 2
 
     def load_checkpoint(self, checkpoint_path, use_cuda):
-        if use_cuda:
+        #todo 待确认加载检查点时，对mps的支持程度
+        # if use_cuda == 2:
+        #     checkpoint = torch.load(checkpoint_path, map_location=torch.device('mps'))
+        # el
+        if use_cuda==1:
             checkpoint = torch.load(checkpoint_path)
         else:
             checkpoint = torch.load(
-                checkpoint_path, map_location=lambda storage, loc: storage)
+            checkpoint_path, map_location=lambda storage, loc: storage)
         return checkpoint
         
     def _load_pretrained_model(self, checkpoint_path, load_optimizer=False, load_training_stat=False):

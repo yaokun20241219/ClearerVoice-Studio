@@ -18,7 +18,10 @@ def main(args):
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
     torch.manual_seed(args.seed)
-    device = torch.device('cuda') if args.use_cuda else torch.device('cpu')
+    if args.use_cuda == 2:
+        device = torch.device('mps')
+    else:
+        device = torch.device('cuda') if args.use_cuda==1 else torch.device('cpu')
     args.device = device
 
     if args.distributed:
@@ -88,6 +91,7 @@ if __name__ == '__main__':
 
     # experiment setting
     parser.add_argument('--mode', type=str, default='train', help='run train or inference')
+    #todo  待确认还有哪里需要对这个cuda进行修正
     parser.add_argument('--use-cuda', dest='use_cuda', default=1, type=int, help='use cuda')
     parser.add_argument('--checkpoint_dir', type=str, default='checkpoints/FRCRN',help='the checkpoint dir')
     parser.add_argument('--network', type=str, default='frcrn', help='the model network types to be loaded for speech enhancment: frcrn, mossformer2')
